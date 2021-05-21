@@ -84,7 +84,7 @@
 /**
  * Generic name for a blank image.
  */
-define ('K_BLANK_IMAGE', '_blank.png');
+// define ('K_BLANK_IMAGE', '_blank.png');
 
 /**
  * Page format.
