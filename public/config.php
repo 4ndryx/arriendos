@@ -1,3 +1,3 @@
-<?php define('FOLDER','C:/wamp64/www/Arriendos/');
-	  define('LINK','http://localhost/Arriendos/');
+<?php define('FOLDER','/app/');
+	  define('LINK','https://andryxarriendos.herokuapp.com/');
  ?>
