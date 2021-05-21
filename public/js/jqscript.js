@@ -13,7 +13,7 @@ $(function(){
 			console.log(response);
 			if (response.result){
 
-				window.location.href = l+'/controllers/dashboard/';
+				window.location.href = l+'/controllers/dashboard.php';
 
 			}else {
 				$('#userData').append($('<p id = "error"></p>'));
