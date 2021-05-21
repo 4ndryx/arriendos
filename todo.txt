@@ -1,0 +1,34 @@
+crear router
+
+agregar con ajax una notif async de usuario creado y borrar los campos
+agregar nuevas fuentes en el css del login y del sistema
+agregar una animacion al ingresar exitosamente al sistema y en caso contrario
+verificar si todas las paginas tienen el verifsession()
+arreglar el formulario de crear ususario
+crear espacio super usuario y los diferentes roles o niveles 
+dividir las direcciones en (parroquia ect) dependiendo de que tipo de propriedad es
+al darle click en ver mostar carrusel de imagenes
+
+arreglar el perfil de las propriedades
+cambiar direccion por ubicacion
+en el perfil hacer las correspondientes verificaciones del id
+agregar como borrar o intercambiar una imagen en especifico
+en la impression borrar la parte del perfil
+para los arrendadores y los arrendatarios, mostrar la propriedad relacionada
+todo los perfiles hacer las verificaciones de los datos
+arreglar perfil de arrendadores y arrendatarios
+ reducir a solo archivos show y add(idea)
+ resolver el mensaje de error en el login y los demas formularios, poner animacion o alerts
+
+
+
+
+
+
+
+
+
+
+
+gestion de errores
+ depurar el codigo y los archivos

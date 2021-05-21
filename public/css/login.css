@@ -1,0 +1,172 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "RobotoRegular";
+	position: relative;
+	color: orangered;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    background: gray fixed no-repeat center center;
+    background-size:cover;
+     outline: none;
+
+}
+
+.caja-logueo{
+    width: 300px;
+    height: 400px;
+	background-color: rgba(255,255,255,.5);
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    justify-content: center;
+    color: #3F51B5;
+}
+.mdi{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    bottom: 290px;
+    color: orangered;
+}
+.registrar{
+    position: absolute;
+    margin-top: 5px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    bottom: 270px;
+    color: orangered;
+}
+form, .elemento{
+    margin: auto;
+}
+
+.dato1{
+    position: absolute;
+    left: 15px;
+    bottom: 200px;
+}
+.inputbar{
+    width: 270px;
+    height: 20px;
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid rgba(0,0,0,.26);
+    color: black;
+}
+.inputbar:focus {
+    
+    outline: none;
+
+}
+.elemento:nth-child(1):after{
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: solid 2px orangered;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+    z-index: 100;
+    left: 15px;
+    bottom: 200px;
+    width: 275px;
+    
+}.elemento:nth-child(2):after{
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: solid 2px orangered;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+    z-index: 100;
+    left: 15px;
+    bottom: 130px;
+    width: 275px;
+    
+}
+
+.elemento:focus-within:after{
+    transform: scaleX(1);
+}
+
+.dato2{
+    position: absolute;
+    left: 15px;
+    bottom: 130px;
+}
+
+.inputext{
+    font-size: 17.5px;
+    color: rgba(0,0,0,.26);
+    transition: transform 150ms ease-in-out;
+    
+}
+.textpeque{
+    transform: translateY(-15px) scale(0.7);
+    transform-origin: left top;
+    transition: transform 150ms ease-in-out;
+    color: orangered;
+    
+}
+.textnorm{
+    transform: translateY(15px) scale(1.4285714285714285714285714285714);
+    transform-origin: left top;
+    transition: transform 150ms ease-in-out;
+    color: black;
+}
+
+.iniciar{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+.startSessbtn{
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+}
+.mdi-send{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    font-size: 14px;
+}
+
+.startSess{
+    text-decoration: none;
+}
+.botiniciar, .startSess, .startSessbtn{
+    border: none;
+    background: inherit;
+    font-size: 18px;
+    color: orangered;
+    border-radius: 4px;
+    height: 35px;
+     outline: none;
+}
+.botiniciar:hover, .startSess:hover{
+    border: none;
+    background: rgba(0,0,0,.07);
+    font-size: 18px;
+}
+
+.fgt_pass{
+    position: absolute;
+    left: 15px;
+    bottom: 85px;
+    text-decoration: none;
+}
+
+#error{
+    position: absolute;
+    left: 15px;
+    bottom: 45px;
+    text-decoration: none;
+    color: red;
+}

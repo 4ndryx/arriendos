@@ -1,0 +1,4 @@
+AuthName "Area reservada a los administradores de sistema"
+AuthType Basic
+AuthUserFile "C:/wamp64/www/Arriendos/admin/.htpasswd"
+Require valid-user
