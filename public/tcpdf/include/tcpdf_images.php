@@ -120,19 +120,19 @@ class TCPDF_IMAGES {
 	 * @since 4.9.016 (2010-04-20)
 	 * @public static
 	 */
-	// public static function _toPNG($image, $tempfile) {
-	// 	// turn off interlaced mode
-	// 	imageinterlace($image, 0);
-	// 	// create temporary PNG image
-	// 	imagepng($image, $tempfile);
-	// 	// remove image from memory
-	// 	imagedestroy($image);
-	// 	// get PNG image data
-	// 	$retvars = self::_parsepng($tempfile);
-	// 	// tidy up by removing temporary image
-	// 	unlink($tempfile);
-	// 	return $retvars;
-	// }
+	public static function _toPNG($image, $tempfile) {
+		// turn off interlaced mode
+		imageinterlace($image, 0);
+		// create temporary PNG image
+		imagepng($image, $tempfile);
+		// remove image from memory
+		imagedestroy($image);
+		// get PNG image data
+		$retvars = self::_parsepng($tempfile);
+		// tidy up by removing temporary image
+		unlink($tempfile);
+		return $retvars;
+	}
 
 	/**
 	 * Convert the loaded image to a JPEG and then return a structure for the PDF creator.
@@ -237,17 +237,17 @@ class TCPDF_IMAGES {
 	 * @return array|false structure containing the image data
 	 * @public static
 	 */
-	// public static function _parsepng($file) {
-	// 	$f = @fopen($file, 'rb');
-	// 	if ($f === false) {
-	// 		// Can't open image file
-	// 		return false;
-	// 	}
+	public static function _parsepng($file) {
+		$f = @fopen($file, 'rb');
+		if ($f === false) {
+			// Can't open image file
+			return false;
+		}
 		//Check signature
-		// if (fread($f, 8) != chr(137).'PNG'.chr(13).chr(10).chr(26).chr(10)) {
-		// 	// Not a PNG file
-		// 	return false;
-		// }
+		if (fread($f, 8) != chr(137).'PNG'.chr(13).chr(10).chr(26).chr(10)) {
+			// Not a PNG file
+			return false;
+		}
 		//Read header chunk
 		fread($f, 4);
 		if (fread($f, 4) != 'IHDR') {
@@ -258,17 +258,17 @@ class TCPDF_IMAGES {
 		$h = TCPDF_STATIC::_freadint($f);
 		$bpc = ord(fread($f, 1));
 		$ct = ord(fread($f, 1));
-		// if ($ct == 0) {
-		// 	$colspace = 'DeviceGray';
-		// } elseif ($ct == 2) {
-		// 	$colspace = 'DeviceRGB';
-		// } elseif ($ct == 3) {
-		// 	$colspace = 'Indexed';
-		// } else {
-		// 	// alpha channel
-		// 	fclose($f);
-		// 	return 'pngalpha';
-		// }
+		if ($ct == 0) {
+			$colspace = 'DeviceGray';
+		} elseif ($ct == 2) {
+			$colspace = 'DeviceRGB';
+		} elseif ($ct == 3) {
+			$colspace = 'Indexed';
+		} else {
+			// alpha channel
+			fclose($f);
+			return 'pngalpha';
+		}
 		if (ord(fread($f, 1)) != 0) {
 			// Unknown compression method
 			fclose($f);
