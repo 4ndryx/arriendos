@@ -1,8 +1,7 @@
 $(function(){
 	'use strict'
 
-	var l = 'http://localhost/Arriendos';
-
+	var l = 'https://andryxarriendos.herokuapp.com/';
 
 
 //login
