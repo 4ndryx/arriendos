@@ -2,10 +2,10 @@
 require 'head.php';
     require 'header.php'; ?>
             <div class="content-wrapper mt-4" style="margin-left: 1px">
-                <section class="content-header">
-                  <div class="container-fluid">
-                    <div class="row mb-2">
-                      <div class="col-sm-6 mt-4">
+                <section class="content-header  mt-5">
+                  <div class="container-fluid  mt-5">
+                    <div class="row mb-2  mt-5">
+                      <div class="col-sm-6 mt-5">
                         <h1><?php echo $contentH ?></h1>
                       </div>
                     </div>

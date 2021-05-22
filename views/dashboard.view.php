@@ -5,7 +5,7 @@ $script = '';
 $contentH ='Panel de administracion'?>
 
 <?php ob_start(); ?>
-	<div class="row mx-auto" style="max-width: 1000px;min-width: 1000px;">
+	<div class="row mx-auto" style="max-width: 100%;min-width: 100%;">
           <div class="col-lg-5 col-6 ">
             <!-- small card -->
             <div class="small-box bg-gradient-blue">
@@ -44,7 +44,7 @@ $contentH ='Panel de administracion'?>
             </div>
           </div>
     </div>
-	<div class="row mx-auto" style="max-width: 1000px;min-width: 1000px;">
+	<div class="row mx-auto" style="max-width: 100%;min-width: 100%;">
           <div class="col-lg-5 col-6 ">
             <!-- small card -->
             <div class="small-box bg-gradient-blue">
