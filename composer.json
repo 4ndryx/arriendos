@@ -1,5 +1,5 @@
-{
-    "name": "acme/blog",
+/*{
+    "name": "arriendos",
     "require": {
         "facade/ignition": "^2.3.6",
         "fzaninotto/faker": "^1.9.1",
@@ -8,4 +8,4 @@
         "phpunit/phpunit": "^9.3",
         "ext-gd": "*"
     }
-}
+}*/
