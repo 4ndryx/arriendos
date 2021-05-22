@@ -12,7 +12,7 @@ require 'head.php';
                   </div><!-- /.container-fluid -->
                 </section>
                 <div class="row  d-flex align-items-center justify-content-center">
-                    <div class="content ">
+                    <div class="content w-100">
                         <div class="container-fluid">
                             <div class="row">
                                 <?= $content ?>
