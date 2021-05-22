@@ -31,6 +31,11 @@
     <!-- metisMenu CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK; ?>public/css/style.css">
+        <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="<?php echo LINK; ?>public/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="<?php echo LINK; ?>public/css/metisMenu/metisMenu-vertical.css">
+
     <!-- modernizr JS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK ?>public/css/admin-lte.min.css">

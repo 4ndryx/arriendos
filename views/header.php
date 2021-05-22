@@ -85,7 +85,7 @@
                                     <div class="col-1 ml-4">
                                         <div class="menu-switcher-pro">
                                             <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-                                                    <i class="educate-icon educate-nav"></i>
+                                                    <i class="fa fa-bars"></i>
                                                 </button>
                                         </div>
                                     </div>
