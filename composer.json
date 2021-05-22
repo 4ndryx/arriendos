@@ -1,1 +1,1 @@
-{ "require": { "Gd": "*" } }
+{ "require": { "ext-gd": "*" } }
