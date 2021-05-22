@@ -49,7 +49,7 @@ $contentH ='Lista de arrendatarios'?>
 
 
 <?php ob_start(); ?>
-<div class="card" style="max-width: 100%; min-width: 100%;">
+<div class="card" style="max-width: 150%; min-width: 150%;">
       <div class="card-header card-warning card-outline">
                 <h3 class="card-title">Arrendatarios registrados</h3>
               </div>
