@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Iniciar Sesión</title>
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/normalize.css">
-	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/MaterialDesign-Webfont-master/css/materialdesignicons.css">
+    <link rel="stylesheet" href="<?php echo LINK; ?>public/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/login.css">
     <script>
         
