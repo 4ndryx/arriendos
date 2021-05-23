@@ -145,7 +145,7 @@ body {}
     margin-left: 260px;
     transition: all 0.3s;
     height: auto;
-    min-height: 808.122px;
+    /*min-height: 808.122px;*/
     width: 80%;
     /*margin-bottom: -53px;*/
 }
@@ -4392,7 +4392,7 @@ div#sparklinehome canvas {
 /*  20. Custom Scroll
 /*----------------------------------------*/
 .comment-scrollbar, .timeline-scrollbar, .messages-scrollbar, .project-list-scrollbar {
-    height: 580px;
+    height: 100%;
 }
 .mCSB_outside+.mCSB_scrollTools {
     right: -15px;
@@ -4735,4 +4735,46 @@ div#sparklinehome canvas {
 .footer-copy-right a{
 	color:#fff;
 	text-decoration:none;
+}
+
+.demo{ background: #FFF;
+		position: absolute; }
+.loader{
+    height: 50px;
+    margin: 70px auto;
+    position: relative;
+    width: 460px;
+    margin: auto;
+    margin-top: 20%;
+}
+.loader .loader-inner{
+    width: 30px;
+    height: 30px;
+    background: #cf6917;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: loading-1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.loader .box-1{ animation-delay: 0s; }
+.loader .box-2{ animation-delay: 0.15s; }
+.loader .box-3{ animation-delay: 0.3s; }
+.loader .box-4{ animation-delay: 0.45s; }
+@keyframes loading-1{
+    0%{
+        left: 0;
+        background: #cf6917;
+    }
+    50%{
+        left: 430px;
+        background: #FFFFF2;
+    }
+    100%{
+        left: 0;
+        background: #cf6917;
+    }
 }

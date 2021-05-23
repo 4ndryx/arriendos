@@ -5,6 +5,7 @@ $(function(){
 
 
 //login
+	$('#loader-wrapper').fadeOut();
 	function verifyDatas(){
 		var user = $('#userData').serialize();
 
