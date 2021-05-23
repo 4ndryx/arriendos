@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p><img src="<?php echo LINK ?>public/img/by.png" alt="Creative Commonss"> <br>Sistema SIADAR diseñado por 4ndryx disponible bajo licencia<a href="https://creativecommons.org/licenses/by/4.0">Creative Commons atribucion</a><br></p>
+                            <p><img src="<?php echo LINK ?>public/img/by.png" width="16pt;" alt="Creative Commonss"> <br>Sistema SIADAR diseñado por 4ndryx disponible bajo licencia<br><a href="https://creativecommons.org/licenses/by/4.0">Creative Commons atribucion</a></p>
                         </div>
                     </div>
                 </div>
