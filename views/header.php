@@ -3,6 +3,14 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Start Left menu area -->
+        <div id = "loader-wrapper" class="demo w-100 h-100" style="z-index: 1000;min-height: 54.3em;">
+    <div class="loader">
+        <div class="loader-inner box-1"></div>
+        <div class="loader-inner box-2"></div>
+        <div class="loader-inner box-3"></div>
+        <div class="loader-inner box-4"></div>
+    </div>
+    </div>
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
