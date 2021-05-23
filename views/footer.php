@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2018. Derechos reservados</a></p>
+                            <p>Sistema SIADAR diseñado por 4ndryx disponible bajo licencia <br><a href="https://creativecommons.org/licenses/by/4.0">Creative Commons atribucion</a><br><img src="<?php echo LINK ?>Arriendos/public/img/by.png" alt="Creative Commonss"></p>
                         </div>
                     </div>
                 </div>
