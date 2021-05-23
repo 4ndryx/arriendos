@@ -24,7 +24,7 @@ $contentH ='Datos de Arrendamiento'?>
         <!-- /.card-header -->
         <!-- form start -->
         <form class="form-horizontal" id = "createContractForm" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype = "multipart/form-data" >
-            <div class="card" style="max-width: 1000px; min-width: 1000px;">
+    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
       <div class="card-header card-warning card-outline">
         <h3 class="card-title">Arrendatario</h3>
       </div>
@@ -113,7 +113,7 @@ $contentH ='Datos de Arrendamiento'?>
 
 
 
-        <div class="card" style="max-width: 1000px; min-width: 1000px;">
+    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
       <div class="card-header card-warning card-outline">
         <h3 class="card-title">Arrendador</h3>
       </div>
@@ -205,7 +205,7 @@ $contentH ='Datos de Arrendamiento'?>
 
 
 
-            <div class="card" style="max-width: 1000px; min-width: 1000px;">
+    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
       <div class="card-header card-warning card-outline">
         <h3 class="card-title">Propriedad</h3>
       </div>
@@ -275,7 +275,7 @@ $contentH ='Datos de Arrendamiento'?>
 
 
 
-            <div class="card" style="max-width: 1000px; min-width: 1000px;">
+    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
                 <div class="card-header card-warning card-outline">
                     <h2 class="card-title text-center">Datos del contrato</h3>
                 </div>

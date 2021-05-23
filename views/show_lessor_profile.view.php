@@ -24,7 +24,7 @@ $contentH ='Perfil'?>
 <?php $script = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
-<div class="row" style="max-width: 1000px; min-width: 1000px;">
+    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
     <div class="card mr-4 card-warning  card-primary card-outline" style="max-width: 27%; min-width: 27%;">
             <div class="card-body box-profile">
                     <div class="text-center">
