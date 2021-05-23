@@ -26,7 +26,7 @@
 <body class="cover">
 	<div class="caja-logueo">
 		<p class="avatar" style="font-size: 80px;">
-			<i class="mdi mdi-account-circle"></i>
+			<i class="mdi mdi-account-circle fa fa-user-circle-o"></i>
 		</p>
 		<p class="registrar">INGRESAR AL SISTEMA</p>
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id ="userData">
