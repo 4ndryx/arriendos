@@ -145,7 +145,7 @@ body {}
     margin-left: 260px;
     transition: all 0.3s;
     height: auto;
-    /*min-height: 808.122px;*/
+    min-height: 51em;
     width: 80%;
     /*margin-bottom: -53px;*/
 }
