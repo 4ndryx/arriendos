@@ -690,7 +690,7 @@ function validateBlurEmpty(that){
 function validateName(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	if($(that).val().length() < 2){
+	if($(that).val().length< 2){
 	    $(that).attr('style','border-color: red');
 	    return true;
 	}
