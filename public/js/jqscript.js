@@ -680,7 +680,7 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 
 function validateBlurEmpty(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
-	$($($(this).next()[0]).children()[1]).text('');
+	$($($(this).next()[0]).children()[1]).text('hola');
 
 	if($(that).val() == ''){
 	    $(that).attr('style','border-color: red');
