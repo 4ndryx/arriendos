@@ -688,7 +688,7 @@ function validateName(that){
 
 }
 
-$('FName').change(function(e){
+$('FName').blur(function(e){
 	validateName(this);
 })
 
