@@ -678,6 +678,30 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 	});
 
 
+function validateName(that){
+	$(that).attr('style','border: 1px solid #ced4da;');
+
+	if($(that).val() == ''){
+	    $(that).attr('style','border-color: red');
+	    return true;
+	}
+
+}
+
+$('FName').change(function(e){
+	validateName(this);
+})
+
+
+
+
+
+
+
+
+
+
+
 });
 
 

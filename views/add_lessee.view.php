@@ -27,11 +27,11 @@ $contentH ='Agregar un arrendatario'?>
         <div class="row mb-4">
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrFName">Nombres</label><input type="text" id="lrFName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
+            <label class="form-label" for="lrFName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
             
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="lrLName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
+            <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
             
           </div>
           <div class="form-outline col-md-4">
