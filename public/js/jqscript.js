@@ -680,7 +680,7 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 
 function validateBlurEmpty(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
-	$($($(this).next()[0]).children()[0]).text('');
+	$($($(this).next()[0]).children()[1]).text('');
 
 	if($(that).val() == ''){
 	    $(that).attr('style','border-color: red');
@@ -692,7 +692,7 @@ function validateBlurEmpty(that){
 for(var i=0; i<$('input').length-3;i++){
     $($('input')[i]).blur(function(e){
 	if (validateBlurEmpty(this)){
-		$($($(this).next()[0]).children()[0]).text('Este campo no peude quedarse vacio. ');
+		$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 	}
 })
 }
