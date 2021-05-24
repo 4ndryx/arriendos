@@ -706,7 +706,7 @@ for(var i=0; i<$('input').length-3;i++){
 	})
 }
 
-$('#FName').input(function(e){
+$('#FName').on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		if (validateName(this)){
 			$($($(this).next()[0]).children()[1]).text('Debe mas de 2 letras. ');
