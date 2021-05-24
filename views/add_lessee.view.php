@@ -28,56 +28,56 @@ $contentH ='Agregar un arrendatario'?>
           <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrFName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Andly</p>
+            <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Pierre</p>
+            <p style="font-size: 12px; color: gray;">  ej: Pierre <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrId">Cedula</label><input type="text" id="lrId" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: 84604654</p>
+            <p style="font-size: 12px; color: gray;">  ej: 84604654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>            
         </div>
         <div class="row mb-2">
           <!-- Username input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrCellPhone">Telefono Celular</label><input type="text" id="lrCellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lesseeedit['phone'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: 04126526654</p>
+            <p style="font-size: 12px; color: gray;">  ej: 04126526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrHomePhone">Telefono de casa</label><input type="text" id="lrHomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lesseeedit['home_phone'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: 02683524569</p>
+            <p style="font-size: 12px; color: gray;">  ej: 02683524569 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrEmail">Correo Electronico</label><input type="text" id="lrEmail" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lesseeedit['email'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: andlypierre@gmail.com</p>
+            <p style="font-size: 12px; color: gray;">  ej: andlypierre@gmail.com <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-2">
           <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrAdress">Direccion</label><input type="text" id="lrAdress" class="form-control" name="adress" placeholder = "Direccion" value="<?php echo $lesseeedit['adress'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Calle, Localidad, Ciudad, Estado</p>
+            <p style="font-size: 12px; color: gray;">  ej: Calle, Localidad, Ciudad, Estado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Username input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrOcupation">Ocupacion</label><input type="text" id="lrOcupation" class="form-control" name="ocupation" placeholder = "Ocupacion" value="<?php echo $lesseeedit['ocupation'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Comerciante</p>
+            <p style="font-size: 12px; color: gray;">  ej: Comerciante <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrnationality">Nacionalidad</label><input type="text" id="lrnationality" class="form-control" name="nacionality" placeholder = "Nacionalidad" value="<?php echo $lesseeedit['nacionality'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Venezolano</p>
+            <p style="font-size: 12px; color: gray;">  ej: Venezolano <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-2">
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrCivilState">Estado civil</label><input type="text" id="lrCivilState" class="form-control" name="civil_status" placeholder = "Estado civil" value="<?php echo $lesseeedit['civil_status'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"  style="color: red;"></spam>  ej: Divorciado</p>
+            <p style="font-size: 12px; color: gray;">  ej: Divorciado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
           <!-- Username input -->
