@@ -351,6 +351,8 @@ $contentH ='Datos de Arrendamiento'?>
                 </div>
             </div>
             <input type="hidden" name="id" value = "<?php if(isset($action) && $action == 'edit'){echo $contractEdit['id'];} ?>">
+                    <div class="row error-message" style="color: red;"><p class="error-message"></p></div>
+
 
             <hr>
               <div class="row mx-auto col-6">

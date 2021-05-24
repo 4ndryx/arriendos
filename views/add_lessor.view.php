@@ -102,6 +102,7 @@ $contentH ='Agregar un arrendador'?>
 
             <input type="hidden" name="oldImg" value="<?php echo $lessoredit['img'] ?>">
         </div>
+        <div class="row error-message" style="color: red;"><p class="error-message"></p></div>
 <hr>
                                                      
         <!-- Submit button -->

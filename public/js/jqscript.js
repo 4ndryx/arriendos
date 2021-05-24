@@ -4,7 +4,6 @@ $(function(){
 	var l = 'https://andryxarriendos.herokuapp.com/';
 
 
-//login
 	$('#loader-wrapper').fadeOut();
 	function verifyDatas(){
 		var user = $('#userData').serialize();
@@ -25,6 +24,23 @@ $(function(){
 		});
 
 	}
+
+function validateEmpty(){
+	$('input').attr('style','border: 1px solid #ced4da;');
+	for(var i=0; i<($('input').length-3);i++){
+	    if($($('input')[i]).val() == ''){
+	        $($('input')[i]).attr('style','border-color: red');
+	    }
+	}
+	for(var i=0; i<($('input').length-3);i++){
+	    if($($('input')[i]).val() == ''){
+	    return true;
+	    }
+	}
+}
+
+
+//login
 	function sendEmail(){
 	var email = $('#fgt_pass_form').serialize();
 
@@ -87,7 +103,12 @@ var user = $('#addUserForm').serialize();
 
 	$('#addUserBtn').click(function(e){
 		e.preventDefault();
-		addUser();
+		if(validateEmpty()){
+			$('.error-message').text('Por favor llenar todos los campos obligatorios');
+		}else {
+			$('.error-message').text('');
+			addUser();
+		}
 	})
 
 
@@ -140,7 +161,12 @@ function addProperty(that){
 
 $('#addPropertyForm').submit(function(e){
 		e.preventDefault();
-		addProperty(this);
+		if(validateEmpty()){
+			$('.error-message').text('Por favor llenar todos los campos obligatorios');
+		}else {
+			$('.error-message').text('');
+			addProperty(this);
+		}
 	})
 
 
@@ -190,9 +216,13 @@ if (response.result) {
 
 $('#addLesseeForm').submit(function(e){
 		e.preventDefault();
-		addLessee(this);
+		if(validateEmpty()){
+			$('.error-message').text('Por favor llenar todos los campos obligatorios');
+		}else {
+			$('.error-message').text('');
+			addLessee(this);
+		}
 	})
-
 
 
 
@@ -237,7 +267,12 @@ function addLessor(that){
 
 $('#addLessorForm').submit(function(e){
 	e.preventDefault();
-	addLessor(this)
+	if(validateEmpty()){
+		$('.error-message').text('Por favor llenar todos los campos obligatorios');
+	}else{
+		$('.error-message').text('');
+		addLessor(this);
+	}
 })
 
 
@@ -525,10 +560,16 @@ var contract = $(that).serialize();
 	}
 
 
-	$('#createContractForm').submit(function(e){
-		e.preventDefault();
+$('#createContractForm').submit(function(e){
+	e.preventDefault();
+	if(validateEmpty()){
+		$('.error-message').text('Por favor llenar todos los campos obligatorios');
+	}else{
+		$('.error-message').text('');
 		addContract(this);
-	})
+	}
+})
+
 
 
 function deleteContract(id){

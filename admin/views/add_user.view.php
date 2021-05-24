@@ -38,6 +38,8 @@ $contentH ='Datos del Usuario'?>
                 <label class="form-label" for="addUserPassword">Contrasena</label><input type="password" id="addUserPassword" class="form-control" name="password" />
               </div>
             </div>
+                    <div class="row error-message" style="color: red;"><p class="error-message"></p></div>
+        <div class="row error-message" style="color: red;"><p class="error-message"></p></div>
             <hr>
 
           <!-- Submit button -->

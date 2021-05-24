@@ -38,23 +38,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	}else{
 		$uname = $_POST['uname'];
 		$password = $_POST['password'];
-
-		$user = getUser($uname, $password);
 		
-			if ($user){
-				if (password_verify($password, $user['password'])){
-					$_SESSION['uname'] = $user['uname'];
-					$_SESSION['name'] = $user['name'];
+		if (!empty($uname) && !empty($password)){
 
-					if(ajax()){die(json_encode(array('result' => true)));
-}
+			$user = getUser($uname, $password);
+			
+				if ($user){
+					if (password_verify($password, $user['password'])){
+						$_SESSION['uname'] = $user['uname'];
+						$_SESSION['name'] = $user['name'];
 
+						if(ajax()){die(json_encode(array('result' => true)));}
+
+					}else{
+						if(ajax()){die(json_encode(array('result' => false, 'error' => 'Datos errados')));}
+					}
 				}else{
-					if(ajax()){die(json_encode(array('result' => false)));}
+						if(ajax()){die(json_encode(array('result' => false, 'error' => 'Datos errados')));}
 				}
-			}else{
-					if(ajax()){die(json_encode(array('result' => false)));}
-			}
+		}else{
+			if(ajax()){die(json_encode(array('result' => false, 'error' => 'Debe llenar todos los campos')));}
+		}	
 	}
 
 }
