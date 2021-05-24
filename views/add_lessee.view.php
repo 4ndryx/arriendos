@@ -38,8 +38,6 @@ $contentH ='Agregar un arrendatario'?>
             <label class="form-label" for="lrId">Cedula</label><input type="text" id="lrId" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
             <p style="font-size: 12px; color: gray;"><spam class = "error-input"></spam>  ej: 84604654</p>
           </div>            
-          </div>
-          </div>
         </div>
         <div class="row mb-4">
           <!-- Username input -->
@@ -51,6 +49,7 @@ $contentH ='Agregar un arrendatario'?>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrHomePhone">Telefono de casa</label><input type="text" id="lrHomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lesseeedit['home_phone'] ?>" />
             <p style="font-size: 12px; color: gray;"><spam class = "error-input"></spam>  ej: 02683524569</p>
+          </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrEmail">Correo Electronico</label><input type="text" id="lrEmail" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lesseeedit['email'] ?>" />
             <p style="font-size: 12px; color: gray;"><spam class = "error-input"></spam>  ej: andlypierre@gmail.com</p>
