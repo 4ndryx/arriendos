@@ -687,15 +687,33 @@ function validateBlurEmpty(that){
 	}
 
 }
+function validateName(that){
+	$(that).attr('style','border: 1px solid #ced4da;');
+
+	if($(that).val().length() < 2){
+	    $(that).attr('style','border-color: red');
+	    return true;
+	}
+
+}
 
 for(var i=0; i<$('input').length-3;i++){
     $($('input')[i]).blur(function(e){
-		$($($(this).next()[0]).children()[1]).text('hola');
+		$($($(this).next()[0]).children()[1]).text('');
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
 	})
 }
+
+$('#FName').input(function(e){
+		$($($(this).next()[0]).children()[1]).text('');
+		if (validateName(this)){
+			$($($(this).next()[0]).children()[1]).text('Debe mas de 2 letras. ');
+		}
+	})
+
+})
 
 
 
