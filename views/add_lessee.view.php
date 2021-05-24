@@ -28,7 +28,7 @@ $contentH ='Agregar un arrendatario'?>
           <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrFName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
-            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input"></spam>  ej: Andly</p>
+            <p style="font-size: 12px; color: gray;"><spam class = "error-message error-input" style="color: red;></spam>  ej: Andly</p>
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
