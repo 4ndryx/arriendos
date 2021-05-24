@@ -220,7 +220,7 @@ $('#addLesseeForm').submit(function(e){
 			$('.error-message').text('Por favor llenar todos los campos obligatorios');
 		}else {
 			$('.error-message').text('');
-			addLessee(this);
+			// addLessee(this);
 		}
 	})
 
