@@ -713,7 +713,6 @@ $('#FName').input(function(e){
 		}
 	})
 
-})
 
 
 
