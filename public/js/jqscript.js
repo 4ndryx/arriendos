@@ -678,7 +678,7 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 	});
 
 
-function validateName(that){
+function validateBlurEmpty(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
 	if($(that).val() == ''){
@@ -688,9 +688,13 @@ function validateName(that){
 
 }
 
-$('FName').blur(function(e){
-	validateName(this);
+for(var i=0; i<$('input').length-3;i++){
+    $($('input')[i]).blur(function(e){
+	if (validateBlurEmpty(this)){
+		$($($(this).next()[0]).children()[0]).text('Este campo no peude quedarse vacio. ');
+	}
 })
+}
 
 
 
