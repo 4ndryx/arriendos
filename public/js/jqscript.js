@@ -729,7 +729,7 @@ function validateNameChars(that){
 }
 
 var charValidate = $('#Ocupation, #nationality, #CivilState, #pType , #pState , #pDescription');
-for (va = 0; i < charValidate.length; i++) {
+for (var i = 0; i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		validateNameChars(this);
