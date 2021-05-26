@@ -27,27 +27,31 @@ $contentH ='Agregar una propriedad'?>
       <div class="card-body">
         <div class="row mb-4">
           <div class="form-outline col-md-4">
-            <label class="form-label" for="pDirection">Direccion</label><input type="text" id="pDirection" class="form-control" name="adress" value= "<?php echo $propertyedit['adress'] ?>"/>
+            <label class="form-label" for="adress">Direccion</label><input type="text" id="adress" class="form-control" name="adress" value= "<?php echo $propertyedit['adress'] ?>"/>
+            <p style="font-size: 12px; color: gray;">  ej: Mercado, # de local<br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="pArea">Superficie</label><input type="text" id="pArea" class="form-control" name="area" value= "<?php echo $propertyedit['area'] ?>"/>
+            <label class="form-label" for="pArea">Superficie</label><input type="number" id="pArea" class="form-control" name="area" value= "<?php echo $propertyedit['area'] ?>"/>
+            <p style="font-size: 12px; color: gray;">  ej: 20 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
         <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="pType">Tipo</label><input type="text" id="pType" class="form-control" name="type" value= "<?php echo $propertyedit['type'] ?>"/>
-
+            <p style="font-size: 12px; color: gray;">  ej: Imueble <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-4">
           <div class="form-outline col-md-4">
             <label class="form-label" for="pState">Estado de Uso</label><input type="text" id="pState" class="form-control" name="state" value= "<?php echo $propertyedit['state'] ?>"/>
+            <p style="font-size: 12px; color: gray;">  ej: Buen estado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
 
         <!-- Name input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="pDescription">Descripcion</label><input type="text" id="pDescription" class="form-control" name="description" value= "<?php echo $propertyedit['description'] ?>"/>
+            <p style="font-size: 12px; color: gray;">  ej: Local vacio .... <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
 

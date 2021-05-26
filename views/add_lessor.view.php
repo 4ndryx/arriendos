@@ -27,56 +27,56 @@ $contentH ='Agregar un arrendador'?>
         <div class="row mb-4">
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrFName">Nombres</label><input type="text" id="lrFName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lessoredit['fname'] ?>" />
-            
+            <label class="form-label" for="FName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lessoredit['fname'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="lrLName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lessoredit['lname'] ?>" />
-            
+            <label class="form-label" for="LName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lessoredit['lname'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: Pierre <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrId">Cedula</label><input type="text" id="lrId" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lessoredit['id'] ?>" />
-            
+            <label class="form-label" for="Id">Cedula</label><input type="number" id="Id" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lessoredit['id'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: 84604654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-4">
           <!-- Username input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrCellPhone">Telefono Celular</label><input type="text" id="lrCellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lessoredit['phone'] ?>" />
-            
+            <label class="form-label" for="CellPhone">Telefono Celular</label><input type="text" id="CellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lessoredit['phone'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: 04126526654 o +584126526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrHomePhone">Telefono de casa</label><input type="text" id="lrHomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lessoredit['home_phone'] ?>" />
-            
+            <label class="form-label" for="HomePhone">Telefono de casa</label><input type="text" id="HomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lessoredit['home_phone'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: 02686526654 o +582686526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrEmail">Correo Electronico</label><input type="text" id="lrEmail" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lessoredit['email'] ?>" />
-            
+            <label class="form-label" for="Email">Correo Electronico</label><input type="text" id="Email" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lessoredit['email'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: andlypierre@gmail.com <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-4">
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrAdress">Direccion</label><input type="text" id="lrAdress" class="form-control" name="adress" placeholder = "Direccion" value="<?php echo $lessoredit['adress'] ?>" />
-            
+            <label class="form-label" for="Adress">Direccion</label><input type="text" id="Adress" class="form-control" name="adress" placeholder = "Direccion" value="<?php echo $lessoredit['adress'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: Calle, Localidad, Ciudad, Estado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Username input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrOcupation">Ocupacion</label><input type="text" id="lrOcupation" class="form-control" name="ocupation" placeholder = "Ocupacion" value="<?php echo $lessoredit['ocupation'] ?>" />
-            
+            <label class="form-label" for="Ocupation">Ocupacion</label><input type="text" id="Ocupation" class="form-control" name="ocupation" placeholder = "Ocupacion" value="<?php echo $lessoredit['ocupation'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: Comerciante <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrnationality">Nacionalidad</label><input type="text" id="lrnationality" class="form-control" name="nacionality" placeholder = "Nacionalidad" value="<?php echo $lessoredit['nacionality'] ?>" />
-            
+            <label class="form-label" for="nationality">Nacionalidad</label><input type="text" id="nationality" class="form-control" name="nacionality" placeholder = "Nacionalidad" value="<?php echo $lessoredit['nacionality'] ?>" />
+            <p style="font-size: 12px; color: gray;">  ej: Venezolano <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-4">
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrCivilState">Estado civil</label><input type="text" id="lrCivilState" class="form-control" name="civil_status" placeholder = "Estado civil" value="<?php echo $lessoredit['civil_status'] ?>" />
-            
+            <label class="form-label" for="CivilState">Estado civil</label><input type="text" id="CivilState" class="form-control" name="civil_status" placeholder = "Estado civil" value="<?php echo $lessoredit['civil_status'] ?>" />
+             <p style="font-size: 12px; color: gray;">  ej: Divorciado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <!-- Username input -->
           

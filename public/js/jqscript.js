@@ -710,10 +710,8 @@ for(var i=0; i<$('input').length-3;i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
-			disableBtn();
-		if (!validateOthers()){
-			// $('.btn-primary').removeAttr('disabled');
-		}
+		disableBtn();
+		validateOthers()
 	})
 }
 
@@ -730,8 +728,8 @@ function validateNameChars(that){
 	}
 }
 
-var charValidate = $('#Ocupation,#nationality,#CivilState');
-for (var i = 0; i < charValidate.length; i++) {
+var charValidate = $('#Ocupation, #nationality, #CivilState, #pType , #pState , #pDescription');
+for (va = 0; ,i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		validateNameChars(this);
@@ -752,8 +750,9 @@ function validatePhone(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 	var regex = /^[(+58||0)]\d{10}$/;
 
-	if($(that).val().match(regex)){
+	if(!regex.test($(that).val())){
 	    $(that).attr('style','border-color: red');
+		$($($(this).next()[0]).children()[1]).text('Numero de telefono invalido. ');
 	    return true;
 	}
 	
@@ -762,9 +761,7 @@ function validatePhone(that){
 var phones = $('#CellPhone, #HomePhone');
 for (var i = 0; i < phones.length; i++) {
 	$(phones[i]).blur(function(e){
-		if(validatePhone(this)){
-			$($($(this).next()[0]).children()[1]).text('Numero de telefono invalido. ');
-		}
+		validatePhone(this);
 	})
 }
 
@@ -774,20 +771,20 @@ function validateEmail(that){
 
 	if(!regex.test($(that).val())){
 	    $(that).attr('style','border-color: red');
+		$($($(this).next()[0]).children()[1]).text('Correo invalido. ');
 	    return true;
 	}
 }
 	
 
 $('#Email').blur(function(e){
-		if(validateEmail(this)){
-			$($($(this).next()[0]).children()[1]).text('Correo invalido. ');
-		}
+	validateEmail(this);
 	})
 
 function validateOthers(){
 	for(var i=0; i<$('input').length-3;i++){
-		if ($.trim($($('input')[i]).val()) == '' && $($($(this).next()[0]).children()[1]).text() !== '' ){
+		if ($.trim($($('input')[i]).val()) !== '' && $($($(this).next()[0]).children()[1]).text() == '' ){
+			$('.btn-primary').removeAttr('disabled');
 			return true;
 				}
 	}

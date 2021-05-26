@@ -35,7 +35,7 @@ $contentH ='Agregar un arrendatario'?>
             <p style="font-size: 12px; color: gray;">  ej: Pierre <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="Id">Cedula</label><input type="text" id="Id" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
+            <label class="form-label" for="Id">Cedula</label><input type="number" id="Id" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: 84604654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>            
         </div>
@@ -43,12 +43,12 @@ $contentH ='Agregar un arrendatario'?>
           <!-- Username input -->
           <div class="form-outline col-md-4">
             <label class="form-label" for="CellPhone">Telefono Celular</label><input type="text" id="CellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lesseeedit['phone'] ?>" />
-            <p style="font-size: 12px; color: gray;">  ej: 04126526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
+            <p style="font-size: 12px; color: gray;">  ej: 04126526654 o +584126526654<br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="HomePhone">Telefono de casa</label><input type="text" id="HomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lesseeedit['home_phone'] ?>" />
-            <p style="font-size: 12px; color: gray;">  ej: 02683524569 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
+            <p style="font-size: 12px; color: gray;">  ej: 02686526654 o +582686526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
             <label class="form-label" for="Email">Correo Electronico</label><input type="text" id="Email" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lesseeedit['email'] ?>" />
