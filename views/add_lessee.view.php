@@ -27,56 +27,56 @@ $contentH ='Agregar un arrendatario'?>
         <div class="row mb-2">
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrFName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
+            <label class="form-label" for="FName">Nombres</label><input type="text" id="FName" class="form-control" name="fname" placeholder = "Nombres" value="<?php echo $lesseeedit['fname'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrLName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
+            <label class="form-label" for="LName">Apellidos</label><input type="text" id="LName" class="form-control" name="lname" placeholder = "Apellidos" value="<?php echo $lesseeedit['lname'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Pierre <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrId">Cedula</label><input type="text" id="lrId" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
+            <label class="form-label" for="Id">Cedula</label><input type="text" id="Id" class="form-control" name="id" placeholder = "Cedula" value="<?php echo $lesseeedit['id'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: 84604654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>            
         </div>
         <div class="row mb-2">
           <!-- Username input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrCellPhone">Telefono Celular</label><input type="text" id="lrCellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lesseeedit['phone'] ?>" />
+            <label class="form-label" for="CellPhone">Telefono Celular</label><input type="text" id="CellPhone" class="form-control" name="phone" placeholder = "Telefono Celular" value="<?php echo $lesseeedit['phone'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: 04126526654 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrHomePhone">Telefono de casa</label><input type="text" id="lrHomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lesseeedit['home_phone'] ?>" />
+            <label class="form-label" for="HomePhone">Telefono de casa</label><input type="text" id="HomePhone" class="form-control" name="home_phone" placeholder = "Telefono de casa" value="<?php echo $lesseeedit['home_phone'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: 02683524569 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrEmail">Correo Electronico</label><input type="text" id="lrEmail" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lesseeedit['email'] ?>" />
+            <label class="form-label" for="Email">Correo Electronico</label><input type="text" id="Email" class="form-control" name="email" placeholder = "Correo Electronico" value="<?php echo $lesseeedit['email'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: andlypierre@gmail.com <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-2">
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrAdress">Direccion</label><input type="text" id="lrAdress" class="form-control" name="adress" placeholder = "Direccion" value="<?php echo $lesseeedit['adress'] ?>" />
+            <label class="form-label" for="Adress">Direccion</label><input type="text" id="Adress" class="form-control" name="adress" placeholder = "Direccion" value="<?php echo $lesseeedit['adress'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Calle, Localidad, Ciudad, Estado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Username input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrOcupation">Ocupacion</label><input type="text" id="lrOcupation" class="form-control" name="ocupation" placeholder = "Ocupacion" value="<?php echo $lesseeedit['ocupation'] ?>" />
+            <label class="form-label" for="Ocupation">Ocupacion</label><input type="text" id="Ocupation" class="form-control" name="ocupation" placeholder = "Ocupacion" value="<?php echo $lesseeedit['ocupation'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Comerciante <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
 
           <!-- Name input -->
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrnationality">Nacionalidad</label><input type="text" id="lrnationality" class="form-control" name="nacionality" placeholder = "Nacionalidad" value="<?php echo $lesseeedit['nacionality'] ?>" />
+            <label class="form-label" for="nationality">Nacionalidad</label><input type="text" id="nationality" class="form-control" name="nacionality" placeholder = "Nacionalidad" value="<?php echo $lesseeedit['nacionality'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Venezolano <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
           </div>
         </div>
         <div class="row mb-2">
           <div class="form-outline col-md-4">
-            <label class="form-label" for="lrCivilState">Estado civil</label><input type="text" id="lrCivilState" class="form-control" name="civil_status" placeholder = "Estado civil" value="<?php echo $lesseeedit['civil_status'] ?>" />
+            <label class="form-label" for="CivilState">Estado civil</label><input type="text" id="CivilState" class="form-control" name="civil_status" placeholder = "Estado civil" value="<?php echo $lesseeedit['civil_status'] ?>" />
             <p style="font-size: 12px; color: gray;">  ej: Divorciado <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
             
           </div>
@@ -85,7 +85,7 @@ $contentH ='Agregar un arrendatario'?>
           <div class="form-group-inner form-outline col-md-8">
              <div class="row mt-4">
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                  <label class="" for="lrProfilImg">Imagen de perfil</label>
+                  <label class="" for="ProfilImg">Imagen de perfil</label>
                 </div>
                 <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                   <div class="file-upload-inner ts-forms">
@@ -93,7 +93,7 @@ $contentH ='Agregar un arrendatario'?>
                       <label class="icon-right" for="prepend-big-btn">
                         <i class="fa fa-upload"></i>
                       </label>
-                      <div class="file-button" width = "" >Examinar<input type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;" id="lrProfilImg" class="" name="img">
+                      <div class="file-button" width = "" >Examinar<input type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;" id="ProfilImg" class="" name="img">
                       </div>
                       <input type="text" id="prepend-big-btn" placeholder="Seleccionar archivo">
                     </div>

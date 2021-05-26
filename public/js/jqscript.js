@@ -678,6 +678,12 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 	});
 
 
+function disableBtn(){
+	$('.btn-primary').attr('disabled', 'disabled');
+}
+disableBtn();
+
+
 function validateBlurEmpty(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
@@ -687,10 +693,10 @@ function validateBlurEmpty(that){
 	}
 
 }
-function validateName(that){
+function validateNameL(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	if($(that).val().length< 2){
+	if(trim($(that).val()).length< 2){
 	    $(that).attr('style','border-color: red');
 	    return true;
 	}
@@ -703,18 +709,84 @@ for(var i=0; i<$('input').length-3;i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
+			disableBtn();
+		if (!validateOthers()){
+			$('.btn-primary').removeAttr('disabled');
+		}
 	})
 }
 
-$('#FName').on('input', function(e){
+function validateNameChars(that){
+	$(that).attr('style','border: 1px solid #ced4da;');
+
+	var regex = /^[a-zA-Z]+$/;
+
+	if(!regex.test($(that))){
+	    $(that).attr('style','border-color: red');
+	    return true;
+	}
+
+}
+
+var charValidate = $('#FName, #LName,#Ocupation,#nationality,#CivilState');
+for (var i = 0; i < charValidate.length; i++) {
+	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
-		if (validateName(this)){
-			$($($(this).next()[0]).children()[1]).text('Debe mas de 2 letras. ');
+		if (validateNameChars(this)){
+			if (validateNameL(this) && ($(charValidate[i]).attr('id') == '#Fname' || $(charValidate[i]).attr('id') == 'LName')){
+				$($($(this).next()[0]).children()[1]).text('El campo debe tener mas de 2 letras. ');
+		}else{
+			$($($(this).next()[0]).children()[1]).text('El campo no debe llevar caracteres especiales. ');
+		}
+
+		}
+	})
+}
+
+function validatePhone(that){
+	$(that).attr('style','border: 1px solid #ced4da;');
+	var regex = /^[(+58||0)]\d{10}$/;
+
+	if($(that).val().match(regex)){
+	    $(that).attr('style','border-color: red');
+	    return true;
+	}
+	
+}
+
+var phones = $('#CellPhone, #HomePhone');
+for (var i = 0; i < phones.length; i++) {
+	$(phones[i]).blur(function(e){
+		if(validatePhone(this)){
+			$($($(this).next()[0]).children()[1]).text('Numero de telefono invalido. ');
+		}
+	})
+}
+
+function validateEmail(that){
+	$(that).attr('style','border: 1px solid #ced4da;');
+	var regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+[^<>()\.,;:\s@\"]{2,})$/;
+
+	if(!regex.test($(that).val())){
+	    $(that).attr('style','border-color: red');
+	    return true;
+	}
+}
+	
+
+$('#Email').blur(function(e){
+		if(validateEmail(this)){
+			$($($(this).next()[0]).children()[1]).text('Correo invalido. ');
 		}
 	})
 
-
-
+function validateOthers(){
+	for(var i=0; i<$('input').length-3;i++){
+		if (trim($($('input')[i]).val()) == '' && $($($(this).next()[0]).children()[1]).text() !== '' ){
+			return true;
+				}
+	}
+}
 
 
 
