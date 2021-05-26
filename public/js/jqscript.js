@@ -735,11 +735,11 @@ for (var i = 0; i < charValidate.length; i++) {
 		if (validateNameChars(this)){
 			if (validateNameL(this) && ($(charValidate[i]).attr('id') == 'FName' || $(charValidate[i]).attr('id') == 'LName')){
 				$($($(this).next()[0]).children()[1]).text('El campo debe tener mas de 2 letras. ');
-			}else{
+			}
+		}else{
 				$($($(this).next()[0]).children()[1]).text('El campo no debe llevar caracteres especiales. ');
 			}
 
-		}
 	})
 }
 
