@@ -735,7 +735,7 @@ for (var i = 0; i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		if (validateNameChars(this)){
-			if ($(charValidate[i]).attr('id') == 'FName' || $(charValidate[i]).attr('id') == 'LName'){
+			if ($(charValidate[0])|| $(charValidate[1])){
 			validateNameL(this);
 		}
 		}
