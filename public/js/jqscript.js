@@ -698,6 +698,7 @@ function validateNameL(that){
 
 	if($.trim($(that).val()).length< 2){
 	    $(that).attr('style','border-color: red');
+		$($($(that).next()[0]).children()[1]).text('El campo debe tener mas de 2 letras. ');
 	    return true;
 	}
 
@@ -719,13 +720,14 @@ for(var i=0; i<$('input').length-3;i++){
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	var regex = /^[a-zA-Z]+$/;
+	var regex = /^[a-zA-Z]\b+$/;
 
 	if(regex.test($(that).val())){
-	    $(that).attr('style','border-color: red');
 	    return true;
+	}else{
+	    $(that).attr('style','border-color: red');
+		$($($(that).next()[0]).children()[1]).text('El campo no debe llevar caracteres especiales. ');
 	}
-
 }
 
 var charValidate = $('#FName, #LName,#Ocupation,#nationality,#CivilState');
@@ -733,12 +735,10 @@ for (var i = 0; i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		if (validateNameChars(this)){
-			if (validateNameL(this) && ($(charValidate[i]).attr('id') == 'FName' || $(charValidate[i]).attr('id') == 'LName')){
-				$($($(this).next()[0]).children()[1]).text('El campo debe tener mas de 2 letras. ');
-			}
-		}else{
-				$($($(this).next()[0]).children()[1]).text('El campo no debe llevar caracteres especiales. ');
-			}
+			if ($(charValidate[i]).attr('id') == 'FName' || $(charValidate[i]).attr('id') == 'LName'){
+			validateNameL(this);
+		}
+		}
 
 	})
 }
