@@ -750,8 +750,8 @@ function validatePhone(that){
 	var regex = /^[(+58||0)]\d{10}$/;
 
 	if(!regex.test($(that).val())){
-	    $(that).attr('style','border-color: red');
 		$($($(this).next()[0]).children()[1]).text('Numero de telefono invalido. ');
+	    $(that).attr('style','border-color: red');
 	    return true;
 	}
 	
