@@ -710,7 +710,6 @@ for(var i=0; i<$('input').length-3;i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
-		disableBtn();
 		validateOthers()
 	})
 }
@@ -782,10 +781,11 @@ $('#Email').blur(function(e){
 	})
 
 function validateOthers(){
-	for(var i=0; i<$('input').length-3;i++){
-		if ($.trim($($('input')[i]).val()) !== '' && $($($(this).next()[0]).children()[1]).text() == '' ){
 			$('.btn-primary').removeAttr('disabled');
-			return true;
+	for(var i=0; i<$('input').length-3;i++){
+		if ($.trim($($('input')[i]).val()) == '' && $($($(this).next()[0]).children()[1]).text() !== '' ){
+		disableBtn();
+					return true;
 				}
 	}
 }

@@ -37,14 +37,14 @@
         ============================================ -->
     <!-- <script src="<?php echo LINK ?>public/js/jquery.scrollUp.min.js"></script> -->
     <!-- counterup JS
-        ============================================ -->
+        ============================================ --><!-- 
     <script src="<?php echo LINK ?>public/js/counterup/jquery.counterup.min.js"></script>
     <script src="<?php echo LINK ?>public/js/counterup/waypoints.min.js"></script>
-    <script src="<?php echo LINK ?>public/js/counterup/counterup-active.js"></script>
-    <!-- mCustomScrollbar JS
+    <script src="<?php echo LINK ?>public/js/counterup/counterup-active.js"></script> -->
+    <!-- mCustomScrollbar JS<!-- 
         ============================================ -->
     <script src="<?php echo LINK ?>public/js/scrollbar/jquery.mCustomScrollbar.concat.min.<!-- js"></script>
-    <script src="<?php echo LINK ?>public/js/scrollbar/mCustomScrollbar-active.js"></script> -->
+    <script src="<?php echo LINK ?>public/js/scrollbar/mCustomScrollbar-active.js"> --></script> -->
     <!-- metisMenu JS
         ============================================ -->
     <script src="<?php echo LINK ?>public/js/metisMenu/metisMenu.min.js"></script>
