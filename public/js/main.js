@@ -44,7 +44,7 @@
 	/*-----------------------------
 		Menu Stick
 	---------------------------------*/
-	$(".sicker-menu").sticky({topSpacing:0});
+	// $(".sicker-menu").sticky({topSpacing:0});
 		
 	$('#sidebarCollapse').on('click', function () {
 		$("body").toggleClass("mini-navbar");
