@@ -730,16 +730,21 @@ function validateNameChars(that){
 	}
 }
 
-var charValidate = $('#FName, #LName,#Ocupation,#nationality,#CivilState');
+var charValidate = $('#Ocupation,#nationality,#CivilState');
 for (var i = 0; i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
-		if (validateNameChars(this)){
-			if (i == 0 || i == 1){
-				validateNameL(this);
-			}
-		}
+		validateNameChars(this);
+	})
+}
 
+var names = $('#FName, #LName');
+for (var i = 0; i < names.length; i++) {
+	$(names[i]).on('input', function(e){
+		$($($(this).next()[0]).children()[1]).text('');
+		if (validateNameChars(this)){
+				validateNameL(this);
+		}
 	})
 }
 
