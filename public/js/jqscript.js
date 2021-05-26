@@ -720,7 +720,7 @@ for(var i=0; i<$('input').length-3;i++){
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	var regex = /^[a-zA-Z]\b+$/;
+	var regex = /^[a-zA-Z]+$/;
 
 	if(regex.test($(that).val())){
 	    return true;
