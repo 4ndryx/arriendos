@@ -696,7 +696,7 @@ function validateBlurEmpty(that){
 function validateNameL(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	if(trim($(that).val()).length< 2){
+	if($trim($(that).val()).length< 2){
 	    $(that).attr('style','border-color: red');
 	    return true;
 	}
@@ -782,7 +782,7 @@ $('#Email').blur(function(e){
 
 function validateOthers(){
 	for(var i=0; i<$('input').length-3;i++){
-		if (trim($($('input')[i]).val()) == '' && $($($(this).next()[0]).children()[1]).text() !== '' ){
+		if ($trim($($('input')[i]).val()) == '' && $($($(this).next()[0]).children()[1]).text() !== '' ){
 			return true;
 				}
 	}
