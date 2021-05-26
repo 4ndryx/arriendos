@@ -696,7 +696,7 @@ function validateBlurEmpty(that){
 function validateNameL(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	if($.trim($(that).val()).length< 2){
+	if($.trim($(that).val()).length <= 2){
 	    $(that).attr('style','border-color: red');
 		$($($(that).next()[0]).children()[1]).text('El campo debe tener mas de 2 letras. ');
 	    return true;
@@ -735,9 +735,9 @@ for (var i = 0; i < charValidate.length; i++) {
 	$(charValidate[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
 		if (validateNameChars(this)){
-			if ($(charValidate[0])|| $(charValidate[1])){
-			validateNameL(this);
-		}
+			if (i = 0 || i = 1){
+				validateNameL(this);
+			}
 		}
 
 	})
