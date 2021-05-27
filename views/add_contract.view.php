@@ -224,7 +224,6 @@ $contentH ='Datos de Arrendamiento'?>
                 <?php endif ?>
             </select>
           </div>
-          <input type="hidden" name="id_property" class="ppt" value = "<?php if(isset($action) && $action == 'edit'){echo $cttEPpt['id'];} ?>">
           <div class="form-outline col-md-4">
             <label class="form-label" for="pArea">Superficie</label><input disabled type="text" id="pArea" class="form-control ppt" name="area" value = "<?php if(isset($action) && $action == 'edit'){echo $cttEPpt['area'];} ?>"/>
           </div>
@@ -283,14 +282,16 @@ $contentH ='Datos de Arrendamiento'?>
                 <div class="form-group-inner">
                     <div class="row">
                         <div class="mg-b-20 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <label>Lugar</label>
+                            <label>Lugar de emission</label>
                             <input type="text" name = "place" class="form-control col-lg-12col-md-12col-sm-12col-xs-12" value = "<?php  echo $contractEdit['place'] ?>" <?php if (isset($action) && $action == 'edit'){echo 'disabled'; } ?>/>
+                            <p style="font-size: 12px; color: gray;">  ej: Coro, Edo. Falcon <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                         </div>
                         <div class="data-custon-pick col-lg-3 col-md-3 col-sm-3 col-xs-12" id="data_1">
                             <label>Fecha de emision</label>
                             <div class="input-group date" >
                                 <span class="input-group-addon" <?php if (isset($action) && $action == 'edit'){echo 'style = "cursor: not-allowed;background-color: #ddd;"'; } ?> ><i class="fa mt-1 fa-calendar" ></i></span>
-                                <input type="text" name = "start_date" class="form-control" <?php if (isset($action) && $action == 'edit'){echo 'disabled'; } ?> value = "<?php  echo $contractEdit['start_date'] ?>">
+                                <input type="date" name = "start_date" class="form-control" <?php if (isset($action) && $action == 'edit'){echo 'disabled'; } ?> value = "<?php  echo $contractEdit['start_date'] ?>">
+                                <p style="font-size: 12px; color: gray;">  ej: 2021-05-18 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                             </div>
                         </div>
 
@@ -299,7 +300,8 @@ $contentH ='Datos de Arrendamiento'?>
                             <label>Fecha de fin</label>
                             <div class="input-group date">
                                 <span class="input-group-addon"><i class="fa mt-1 fa-calendar "></i></span>
-                                <input type="text" name = "end_date" class="form-control input-group.date" value = "<?php  echo $contractEdit['end_date'] ?>">
+                                <input type="date" name = "end_date" class="form-control input-group.date" value = "<?php  echo $contractEdit['end_date'] ?>">
+                                <p style="font-size: 12px; color: gray;">  ej: 2021-05-18 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                             </div>
                         </div>
                             <div class="mg-t-20 col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -307,7 +309,7 @@ $contentH ='Datos de Arrendamiento'?>
                                 <div>
                                     <div class="">
                                         <input name = "bill" type="text" class="form-control" data-mak="$ 999,999,999.99"placeholder="" value = "<?php  echo $contractEdit['bill'] ?>">
-                                        <span class="help-block">$ 999,999.99 o 999,999.99 Bs.F</span>
+                                        <p style="font-size: 12px; color: gray;">  ej: $ 999,999.99 o 999,999.99 Bs.F <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +320,7 @@ $contentH ='Datos de Arrendamiento'?>
                                 <div>
                                     <div class=" mg-b-22">
                                         <input name = "deposite" type="text" class="form-control" data-mas="$ 999,999,999.99"placeholder="" value = "<?php  echo $contractEdit['deposite'] ?>">
-                                        <span class="help-block">$ 999,999.99 o 999,999.99 Bs.F</span>
+                                        <p style="font-size: 12px; color: gray;">  ej: $ 999,999.99 o 999,999.99 Bs.F <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                                     </div>
                                 </div>
                             </div>
@@ -326,15 +328,17 @@ $contentH ='Datos de Arrendamiento'?>
                                 <label>Fecha de pago</label>
                                 <div class="input-group date">
                                     <span class="input-group-addon"><i class="fa mt-1 fa-calendar"></i></span>
-                                    <input name="pay_day" type="text" class="form-control" value = "<?php  echo $contractEdit['pay_day'] ?>">
+                                    <input name="pay_day" type="date" class="form-control" value = "<?php  echo $contractEdit['pay_day'] ?>">
+                                     <p style="font-size: 12px; color: gray;">  ej: 2021-05-18 <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                                 </div>
                             </div>
                         <div class="mg-b-20 col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <label>Actividad</label>
-                            <input name = "activity" type="text" class="form-control col-lg-12col-md-12col-sm-12col-xs-12" value = "<?php  echo $contractEdit['renew'] ?>"/>
+                            <input name = "activity" type="text" class="form-control col-lg-12col-md-12col-sm-12col-xs-12" value = "<?php  echo $contractEdit['activity'] ?>"/>
+                             <p style="font-size: 12px; color: gray;">  ej: Oficina <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                     </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <label>Renovacion</label>
+                            <label>Renovacion de contrato</label>
                             <div class="form-group clearfix mx-auto mt-2">
                           <div class="icheck-primary d-inline">
                             <input type="radio" id="radioPrimary1" name="renew" value = "1"<?php if ($contractEdit['renew'] == 1){echo 'checked';} ?>>
@@ -350,8 +354,8 @@ $contentH ='Datos de Arrendamiento'?>
                         </div>
                 </div>
             </div>
+          <input type="hidden" name="id_property" class="ppt" value = "<?php if(isset($action) && $action == 'edit'){echo $cttEPpt['id'];} ?>">
             <input type="hidden" name="id" value = "<?php if(isset($action) && $action == 'edit'){echo $contractEdit['id'];} ?>">
-                    <div class="row error-message" style="color: red;"><p class="error-message"></p></div>
 
 
             <hr>

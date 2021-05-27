@@ -120,7 +120,7 @@ $contentH ='Perfil'?>
                                             <td><?php echo $property['adress'] ?></td>
                                             <td><?php echo $property['type'] ?></td>
                                             <td><?php echo $property['area'] ?></td>
-                                            <td><a class="btn btn-primary btn-sm col-lg-6 mx-auto" href="show_property_profile.php?id=<?php echo $property['id'] ?>" title="Ver"><i class="fa fa-folder"></i></a></td>
+                                            <td><a class="btn btn-primary btn-sm col-lg-6 mx-auto" href="show_property_profile.php?id=<?php echo $property['id'] ?>" title="Ver propriedad"><i class="fa fa-folder"></i></a></td>
                                           </tr>
                                         <?php endforeach ?>
                                       <?php endif ?>

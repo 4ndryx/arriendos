@@ -76,8 +76,8 @@ $contentH ='Lista de propriedades'?>
                         <td><?php echo $property['description'] ?></td>
                         <td>
                           <div class="row">
-                            <a class="btn btn-primary btn-sm col-lg-3 mx-auto" href="show_property_profile.php?id=<?php echo $property['id'] ?>" title="Ver"><i class="fa fa-folder"></i></a>
-                            <a class="btn btn-info btn-sm col-lg-3 mx-auto" href="add_property.php?action=edit&id=<?php echo $property['id'] ?>" title="Editar"><i class="fa fa-pencil" title="Editar"></i></a>
+                            <a class="btn btn-primary btn-sm col-lg-3 mx-auto" href="show_property_profile.php?id=<?php echo $property['id'] ?>" title="Ver propriedad"><i class="fa fa-folder"></i></a>
+                            <a class="btn btn-info btn-sm col-lg-3 mx-auto" href="add_property.php?action=edit&id=<?php echo $property['id'] ?>" title="Editar propriedad"><i class="fa fa-pencil" title="Editar"></i></a>
                           </div>
                         </td>
                       </tr>

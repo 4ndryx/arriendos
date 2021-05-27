@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					if (password_verify($password, $user['password'])){
 						$_SESSION['uname'] = $user['uname'];
 						$_SESSION['name'] = $user['name'];
+						$_SESSION['lastAccess'] = date('Y-n-j H:i:s');
 
 						if(ajax()){die(json_encode(array('result' => true)));}
 

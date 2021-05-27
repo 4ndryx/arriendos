@@ -116,7 +116,7 @@ $contentH ='Perfil'?>
                         <td><?php echo $lessor['fname'] ?></td>
                         <td><?php echo $lessor['lname'] ?></td>
                         <td><?php echo $lessor['id'] ?></td>
-                        <td><a class="btn btn-primary btn-sm col-lg-12 mx-auto" href="show_lessor_profile.php?id=<?php echo $lessor['id'] ?>" title="Ver"><i class="fa fa-folder"></i></a></td>
+                        <td><a class="btn btn-primary btn-sm col-lg-12 mx-auto" href="show_lessor_profile.php?id=<?php echo $lessor['id'] ?>" title="Ver arrendatario"><i class="fa fa-folder"></i></a></td>
                       <?php endif ?>
                       </tr>
                       <tr>
@@ -127,7 +127,7 @@ $contentH ='Perfil'?>
                         <td><?php echo $lessee['fname'] ?></td>
                         <td><?php echo $lessee['lname'] ?></td>
                         <td><?php echo $lessee['id'] ?></td>
-                        <td><a class="btn btn-primary btn-sm col-lg-12 mx-auto" href="show_lessee_profile.php?id=<?php echo $lessee['id'] ?>" title="Ver"><i class="fa fa-folder"></i></a></td>
+                        <td><a class="btn btn-primary btn-sm col-lg-12 mx-auto" href="show_lessee_profile.php?id=<?php echo $lessee['id'] ?>" title="Ver arrendador"><i class="fa fa-folder"></i></a></td>
                       <?php endif ?>
 
                       </tr>

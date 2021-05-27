@@ -83,7 +83,7 @@ var user = $('#addUserForm').serialize();
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha guardado exitosamente!'
 				})
@@ -92,7 +92,7 @@ var user = $('#addUserForm').serialize();
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha guardado!'
 			      })}
@@ -139,7 +139,7 @@ function addProperty(that){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha guardado exitosamente!'
 				})
@@ -150,7 +150,7 @@ function addProperty(that){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha guardado!'
 			      })}}
@@ -194,7 +194,7 @@ if (response.result) {
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha guardado exitosamente!'
 				});
@@ -205,7 +205,7 @@ if (response.result) {
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha guardado!'
 			      })}		
@@ -248,7 +248,7 @@ function addLessor(that){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha guardado exitosamente!'
 				});
@@ -258,7 +258,7 @@ function addLessor(that){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha guardado!'
 			      })}		}
@@ -367,7 +367,7 @@ function deleteLessee(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				})
@@ -376,7 +376,7 @@ function deleteLessee(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -400,7 +400,7 @@ function deleteLessor(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				});
@@ -410,7 +410,7 @@ function deleteLessor(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -434,7 +434,7 @@ function deleteLeProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				});
@@ -444,7 +444,7 @@ function deleteLeProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -467,7 +467,7 @@ function deleteLrProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				});
@@ -477,7 +477,7 @@ function deleteLrProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -517,7 +517,7 @@ function savePpt2Lr(val){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Propriedad asignada correctamente!'
 				})
@@ -541,7 +541,7 @@ var contract = $(that).serialize();
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha guardado exitosamente!'
 				});
@@ -551,7 +551,7 @@ var contract = $(that).serialize();
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha guardado!'
 			      })}
@@ -582,7 +582,7 @@ function deleteContract(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				})
@@ -591,7 +591,7 @@ function deleteContract(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -613,7 +613,7 @@ function deleteCttProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'success',
 			        title: 'Se ha borrado exitosamente!'
 				});
@@ -623,7 +623,7 @@ function deleteCttProfile(id){
 		    		toast: true,
 		    		position: 'top-end',
 		    		showConfirmButton: false,
-		    		timer: 3000,			        
+		    		timer: 5000,			        
 		    		icon: 'error',
 			        title: 'Hubo un error, no se ha borrado!'
 			      })}
@@ -790,9 +790,26 @@ function validateOthers(){
 	}
 }
 
+function blockSessionReload(){
+	setTimeout(window.location.href = l+'/controllers/login.php', 1000 * 605);
+}
 
 
+var modal = $('#myModal');
+var activeModal = $('#myBtn');
+var close = $('.close');
 
+	activeModal.click(function(e){
+		modal.show();
+	});
+	close.click(function(e){
+		modal.hide();
+	});
+	window.click(function(e){
+	  if (e.target == modal) {
+	    modal.hide();
+	  }
+	});
 
 
 
@@ -802,3 +819,27 @@ function validateOthers(){
 
 
 
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
