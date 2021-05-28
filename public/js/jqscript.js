@@ -383,15 +383,11 @@ function deleteLessee(id){
 	});
 }
 
-$('#deleteitemBtn').click(function(e){
-	console.log('d');
+$('#deleteLesseeBtn').click(function(e){
 	e.preventDefault();
-	var id = $(this).attr('data');
-	func = $(this).attr('targeted');
-	if (targeted == 'deleteLessee'){
-	deleteLessee(id);
-	}
+	var id = $(this).attr('id');
 	modal.hide();
+	deleteLessee(id);
 })
 
 function deleteLessor(id){
@@ -841,10 +837,10 @@ for (var i = 0; i < activeModal.length; i++) {
 	$(activeModal[i]).click(function(e){
 		e.preventDefault();
 		modal.show();
-		var targeted = $(this).attr('targeted');
+		var targeted = $(this).attr('btn-target');
 		var data = $(this).attr('data');
-		$('#deleteitemBtn').attr('data', data);
-		$('#deleteitemBtn').attr('targeted', targeted);
+		$('#delete').attr('data', data);
+		$('#delete').attr('id', targeted);
 	});
 }
 	
