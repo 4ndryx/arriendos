@@ -778,7 +778,7 @@ for(var i=0; i<$('input').length-3;i++){
 			for(var j=0; j<$('input').length-3;i++){
 		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
-			console.log(<$('input').length-3);
+			console.log($('input').length-3);
 	}}
 })}
 
