@@ -383,7 +383,7 @@ function deleteLessee(id){
 	});
 }
 
-$('.deleteLesseeBtn').click(function(e){
+$('#deleteLesseeBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
@@ -418,7 +418,7 @@ function deleteLessor(id){
 	});
 }
 
-$('.deleteLessorBtn').click(function(e){
+$('#deleteLessorBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
@@ -454,7 +454,7 @@ function deleteProperty(id){
 	});
 }
 
-$('.deletePropertyBtn').click(function(e){
+$('#deletePropertyBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
@@ -635,7 +635,7 @@ function deleteContract(id){
 	});
 }
 
-$('.deleteContractBtn').click(function(e){
+$('#deleteContractBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
