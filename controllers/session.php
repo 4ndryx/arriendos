@@ -2,7 +2,7 @@
 function verifySession(){
 	if (!isset($_SESSION['uname'])){
 		header('Location:'.LINK.'controllers/login.php');
-	// }else{
+	}// else{
 	// 	$lastAccess = $SESSION['lastAccess'];
 	// 	$now = date('Y-n-j H:i:s');
 	// 	$elapsedTime = (strtotime($now)-strtotime($lastAccess));
