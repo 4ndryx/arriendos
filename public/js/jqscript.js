@@ -385,7 +385,7 @@ function deleteLessee(id){
 
 $('#deleteLesseeBtn').click(function(e){
 	e.preventDefault();
-	var id = $(this).attr('id');
+	var id = $(this).attr('data');
 	modal.hide();
 	deleteLessee(id);
 })
@@ -839,8 +839,7 @@ for (var i = 0; i < activeModal.length; i++) {
 		modal.show();
 		var targeted = $(this).attr('btn-target');
 		var data = $(this).attr('data');
-		$('#delete').attr('data', data);
-		$('#delete').attr('id', targeted);
+		$('#deleteLesseeBtn').attr('data', data);
 	});
 }
 	
