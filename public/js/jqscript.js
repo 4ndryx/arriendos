@@ -834,7 +834,7 @@ var activeModal = $('.deleteBtn');
 var close = $('.close-Btn');
 
 for (var i = 0; i < activeModal.length; i++) {
-	activeModal.click(function(e){
+	$(activeModal[i]).click(function(e){
 		e.preventDefault();
 		modal.show();
 		var target = activeModal.attr('btn-target');
