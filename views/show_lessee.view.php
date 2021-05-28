@@ -76,7 +76,7 @@ $contentH ='Lista de arrendatarios'?>
                           <div class="row">
                             <a class="btn btn-primary btn-sm col-lg-3 mx-auto" href="show_lessee_profile.php?id=<?php echo $lessee['id'] ?>" title="Ver arrendatario"><i class="fa fa-folder"></i></a>
                             <a class="btn btn-info btn-sm col-lg-3 mx-auto" href="add_lessee.php?action=edit&id=<?php echo $lessee['id'] ?>" title="Editar arrendatario"><i class="fa fa-pencil"></i></a>
-                            <a class="btn btn-danger btn-sm col-lg-3 mx-auto deleteBtn" btn-target = "deleteLesseeBtn" href="#" title="Borrar arrendatario" data ="<?php echo $lessee['id'] ?>" ><i class="fa fa-trash"></i></a>
+                            <a class="btn btn-danger btn-sm col-lg-3 mx-auto deleteBtn" btn-target = "deleteLesseeBtn" targeted = "deleteLessee()" href="#" title="Borrar arrendatario" data ="<?php echo $lessee['id'] ?>" ><i class="fa fa-trash"></i></a>
                           </div>
                         </td>
                       </tr>
