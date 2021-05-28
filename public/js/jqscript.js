@@ -780,7 +780,7 @@ for(var i=0; i<$('input').length-3;i++){
 			$('.btn-primary').attr('disabled', 'disabled');
 			console.log(<$('input').length-3);
 	}}
-}}
+})}
 
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
