@@ -38,7 +38,7 @@ $contentH ='Datos del Usuario'?>
 
               <!-- Password input -->
               <div class="form-outline col-md-5 mx-auto">
-                <label class="form-label" for="addUserPassword">Contrasena</label><input type="password" id="addUserPassword" class="form-control" name="password" />
+                <label class="form-label" for="addUserPassword">Contrasena</label><input type="text" id="addUserPassword" class="form-control" name="password" />
                  <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
               </div>
             </div>
