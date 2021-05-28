@@ -14,7 +14,7 @@
     <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="modal-content" style="width: 25%; background-color: currentColor;">
     <span class="close close-Btn">&times;</span>
      <div class="modal-footer justify-content-between ">
       <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
