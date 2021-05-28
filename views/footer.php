@@ -21,11 +21,11 @@
     <!-- wow JS
         ============================================ -->
     <!-- <script src="<?php echo LINK ?>public/js/wow.min.js"></script> -->
-    price-slider JS
-        ============================================
+    <!-- price-slider JS -->
+        <!-- ============================================ -->
     <script src="<?php echo LINK ?>public/js/jquery-price-slider.js"></script>
-    meanmenu JS
-        ============================================
+    <!-- meanmenu JS -->
+        <!-- ============================================ -->
     <script src="<?php echo LINK ?>public/js/jquery.meanmenu.js"></script>
     <!-- owl.carousel JS
         ============================================ -->
@@ -41,7 +41,7 @@
     <script src="<?php echo LINK ?>public/js/counterup/jquery.counterup.min.js"></script>
     <script src="<?php echo LINK ?>public/js/counterup/waypoints.min.js"></script>
     <script src="<?php echo LINK ?>public/js/counterup/counterup-active.js"></script> -->
-    <!-- mCustomScrollbar JS<!-- 
+    <!-- mCustomScrollbar JS
         ============================================ -->
     <script src="<?php echo LINK ?>public/js/scrollbar/jquery.mCustomScrollbar.concat.min.<!-- js"></script>
     <script src="<?php echo LINK ?>public/js/scrollbar/mCustomScrollbar-active.js"> --></script> -->
