@@ -849,14 +849,14 @@ function validateOthers(){
 			$('.btn-primary').removeAttr('disabled');
 	for(var i=0; i<$('input').length-3;i++){
 		if ($.trim($($('input')[i]).val()) == '' && $($($($('input')[i]).next()[0]).children()[1]).text() !== '' ){
-		disableBtn();
-					return true;
+			$('.btn-primary').attr('disabled', 'disabled');					
+			return true;
 				}
 	}
 }
 
 function blockSessionReload(){
-	setTimeout(window.location.href = l+'/controllers/login.php', 1000 * 605);
+	setTimeout(window.location.href = l+'/controllers/login.php', 1000 * 242);
 }
 
 
