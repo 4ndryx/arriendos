@@ -775,14 +775,12 @@ for(var i=0; i<$('input').length-3;i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
-					$('.btn-primary').removeAttr('disabled');
-	for(var i=0; i<$('input').length-3;i++){
-		if ($.trim($($('input')[i]).val()) == '' && $($($($('input')[i]).next()[0]).children()[1]).text() != '' ){
+			for(var j=0; j<$('input').length-3;i++){
+		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 			console.log('disabled');
-
-	}
-}
+	}}
+})}
 
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
@@ -851,17 +849,17 @@ $('#Email').blur(function(e){
 	})
 
 // function validateOthers(){
-	// 		$('.btn-primary').removeAttr('disabled');
-	// for(var i=0; i<$('input').length-3;i++){
-	// 	if ($.trim($($('input')[i]).val()) == '' && $($($($('input')[i]).next()[0]).children()[1]).text() != '' ){
-	// 		$('.btn-primary').attr('disabled', 'disabled');
-	// 		console.log('disabled');
-	// 			}
-	// }
+// 			$('.btn-primary').removeAttr('disabled');
+// 	for(var j=0; j<$('input').length-3;i++){
+// 		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+// 			$('.btn-primary').attr('disabled', 'disabled');
+// 			console.log('disabled');
+// 				}
+// 	}
 // }
 
 function blockSessionReload(){
-	setTimeout(window.location.href = l+'/controllers/login.php', 1000 * 242);
+	setTimeout(function (){window.location.href = l+'/controllers/login.php'}, 1000 * 242);
 }
 
 
