@@ -91,7 +91,7 @@ $contentH ='Lista de contratos'?>
                         <td><div class="row">
                             <a class="btn btn-primary btn-sm mx-auto" href="show_contract_format.php?id=<?php echo $contract['id'] ?>" title="Ver datos"><i class="fa fa-folder"></i></a>
                             <a class="btn btn-info btn-sm mx-auto" href="add_contract.php?action=edit&id=<?php echo $contract['id'] ?>" title="Editar datos"><i class="fa fa-pencil"></i></a>
-                            <a class="btn btn-danger btn-sm mx-auto deleteContractBtn" href="#" title="Borrar datos"><i class="fa fa-trash"></i></a>
+                            <a class="btn btn-danger btn-sm mx-auto deleteBtn" btn-target = "deleteContractBtn" href="#" title="Borrar datos"><i class="fa fa-trash"></i></a>
                           </div></td>
                       </tr>
                     <?php endforeach ?>

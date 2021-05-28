@@ -37,7 +37,7 @@ $contentH ='Perfil'?>
                                   </i>
                                   Editar
                               </a>
-                              <a class="btn btn-danger btn-sm col-lg-5 mx-auto deleteLeProfileBtn" href="#">
+                              <a class="btn btn-danger btn-sm col-lg-5 mx-auto deleteBtn" btn-target = "deleteLeProfileBtn" href="#">
                                   <i class="fa fa-trash">
                                   </i>
                                   Borrar

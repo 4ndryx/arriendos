@@ -172,7 +172,7 @@ $contentH ='Datos de Arrendamiento'?>
                                   </i>
                                   Editar
                               </a>
-                              <a class="btn btn-danger btn-sm col-lg-1 mr-auto ml-1 deleteCttProfileBtn" id = "<?php echo $contract['id'] ?>" href="#">
+                              <a class="btn btn-danger btn-sm col-lg-1 mr-auto ml-1 deleteBtn" btn-target = "deleteCttProfileBtn" id = "<?php echo $contract['id'] ?>" href="#">
                                   <i class="fa fa-trash">
                                   </i>
                                   Borrar

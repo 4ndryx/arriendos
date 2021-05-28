@@ -387,6 +387,7 @@ $('.deleteLesseeBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
+	modal.hide();
 	deleteLessee(id);
 })
 
@@ -421,9 +422,45 @@ $('.deleteLessorBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
+	modal.hide();
 	deleteLessor(id);
 })
 
+
+function deleteProperty(id){
+
+	$.get(l + '/controllers/show_propertyt.php?action=delete&id=' + id, function(response){
+			response = JSON.parse(response);
+			if (response.result) { 
+				$('#' + id).remove();
+				Swal.fire({
+		    		toast: true,
+		    		position: 'top-end',
+		    		showConfirmButton: false,
+		    		timer: 5000,			        
+		    		icon: 'success',
+			        title: 'Se ha borrado exitosamente!'
+				});
+
+			}else{
+				Swal.fire({
+		    		toast: true,
+		    		position: 'top-end',
+		    		showConfirmButton: false,
+		    		timer: 5000,			        
+		    		icon: 'error',
+			        title: 'Hubo un error, no se ha borrado!'
+			      })}
+	});
+}
+
+$('.deletePropertyBtn').click(function(e){
+	e.preventDefault();
+	var parent = $($(this).parent().parent().parent());
+	var id = parent.attr('id');
+	modal.hide();
+	deleteProperty(id);
+})
 
 function deleteLeProfile(id){
 
@@ -602,6 +639,7 @@ $('.deleteContractBtn').click(function(e){
 	e.preventDefault();
 	var parent = $($(this).parent().parent().parent());
 	var id = parent.attr('id');
+	modal.hide();
 	deleteContract(id);
 })
 function deleteCttProfile(id){
@@ -796,50 +834,26 @@ function blockSessionReload(){
 
 
 var modal = $('#myModal');
-var activeModal = $('#myBtn');
-var close = $('.close');
+var activeModal = $('.deleteBtn');
+var close = $('.close-Btn');
 
-	activeModal.click(function(e){
-		modal.show();
-	});
-	close.click(function(e){
-		modal.hide();
-	});
-	window.click(function(e){
-	  if (e.target == modal) {
-	    modal.hide();
-	  }
-	});
+activeModal.click(function(e){
+	e.preventDefault();
+	modal.show();
+	var target = activeModal.attr('btn-target');
+	$('#delete').attr('id', target);
+});
+close.click(function(e){
+	modal.hide();
+});
+window.click(function(e){
+  if (e.target == modal) {
+    modal.hide();
+  }
+});
 
 
 
 
 
 });
-
-
-
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}

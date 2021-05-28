@@ -68,7 +68,7 @@ $contentH ='Lista de propriedades'?>
                   </thead>
                   <tbody>
                     <?php foreach ($properties as $property): ?>
-                      <tr>
+                      <tr id = "<?php echo $property['id'] ?>">
                         <td><?php echo $property['adress'] ?></td>
                         <td><?php echo $property['area'] ?></td>
                         <td><?php echo $property['type'] ?></td>
@@ -78,6 +78,7 @@ $contentH ='Lista de propriedades'?>
                           <div class="row">
                             <a class="btn btn-primary btn-sm col-lg-3 mx-auto" href="show_property_profile.php?id=<?php echo $property['id'] ?>" title="Ver propriedad"><i class="fa fa-folder"></i></a>
                             <a class="btn btn-info btn-sm col-lg-3 mx-auto" href="add_property.php?action=edit&id=<?php echo $property['id'] ?>" title="Editar propriedad"><i class="fa fa-pencil" title="Editar"></i></a>
+                            <a class="btn btn-danger btn-sm mx-auto deleteBtn" btn-target = "deletePropertyBtn" href="#" title="Borrar datos"><i class="fa fa-trash"></i></a>
                           </div>
                         </td>
                       </tr>

@@ -15,8 +15,11 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <span class="close close-Btn">&times;</span>
+     <div class="modal-footer justify-content-between ">
+      <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
+      <button id ="delete" type="button" class="btn btn-outline-light">Borrar</button>
+    </div>
   </div>
 
 </div>
