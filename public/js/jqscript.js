@@ -385,8 +385,7 @@ function deleteLessee(id){
 
 $('#deleteLesseeBtn').click(function(e){
 	e.preventDefault();
-	var parent = $($(this).parent().parent().parent());
-	var id = parent.attr('id');
+	var id = $(this).attr('id');
 	modal.hide();
 	deleteLessee(id);
 })
@@ -420,8 +419,7 @@ function deleteLessor(id){
 
 $('#deleteLessorBtn').click(function(e){
 	e.preventDefault();
-	var parent = $($(this).parent().parent().parent());
-	var id = parent.attr('id');
+	var id = $(this).attr('id');
 	modal.hide();
 	deleteLessor(id);
 })
@@ -456,8 +454,7 @@ function deleteProperty(id){
 
 $('#deletePropertyBtn').click(function(e){
 	e.preventDefault();
-	var parent = $($(this).parent().parent().parent());
-	var id = parent.attr('id');
+	var id = $(this).attr('id');
 	modal.hide();
 	deleteProperty(id);
 })
@@ -637,8 +634,7 @@ function deleteContract(id){
 
 $('#deleteContractBtn').click(function(e){
 	e.preventDefault();
-	var parent = $($(this).parent().parent().parent());
-	var id = parent.attr('id');
+	var id = $(this).attr('id');
 	modal.hide();
 	deleteContract(id);
 })
