@@ -771,8 +771,8 @@ function validateNameL(that){
 
 for(var i=0; i<($('input').length-3);i++){
     $($('input')[i]).blur(function(e){
-		$($($(this).next()[0]).children()[1]).text('');
 		if (validateBlurEmpty(this)){
+			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
 			for(var j=0; j<($('input').length-3);j++){
