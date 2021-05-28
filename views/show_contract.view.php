@@ -55,7 +55,19 @@ $contentH ='Lista de contratos'?>
 
 
 <?php ob_start(); ?>
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%; background-color: currentColor;">
+    <span class="close close-Btn pl-5">&times;</span>
+    <p style="color: white;" class="mx-auto">Borrar registro?</p>
+     <div class="modal-footer justify-content-between ">
+      <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
+      <button id ="deleteContractBtn" type="button" data = "" class="btn btn-outline-light">Borrar</button>
+    </div>
+  </div>
+
+</div>
 
     <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
       <div class="card-header card-warning card-outline">

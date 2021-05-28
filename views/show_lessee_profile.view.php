@@ -7,6 +7,19 @@ $contentH ='Perfil'?>
 
 
 <?php ob_start(); ?>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%; background-color: currentColor;">
+    <span class="close close-Btn pl-5">&times;</span>
+    <p style="color: white;" class="mx-auto">Borrar registro?</p>
+     <div class="modal-footer justify-content-between ">
+      <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
+      <button id ="deleteLeProfileBtn" type="button" data = "" class="btn btn-outline-light">Borrar</button>
+    </div>
+  </div>
+
+</div>
     <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
     <div class="card mr-4 card-warning  card-primary card-outline" style="max-width: 27%; min-width: 27%;">
             <div class="card-body box-profile">
@@ -32,12 +45,12 @@ $contentH ='Perfil'?>
                       </li>
                     </ul>
                     <div class="row mt-4">
-                              <a class="btn btn-info btn-sm col-lg-5 mx-auto" href="add_lessee.php?action=edit&id=<?php echo $lessee['id'] ?>">
+                              <a class="btn btn-info btn-sm col-lg-5 mx-auto" href="add_lessee.php?action=edit&id=">
                                   <i class="fa fa-pencil">
                                   </i>
                                   Editar
                               </a>
-                              <a class="btn btn-danger btn-sm col-lg-5 mx-auto deleteBtn" btn-target = "deleteLeProfileBtn" href="#">
+                              <a class="btn btn-danger btn-sm col-lg-5 mx-auto deleteBtn"  data = "<?php echo $lessee['id'] ?>" href="#">
                                   <i class="fa fa-trash">
                                   </i>
                                   Borrar

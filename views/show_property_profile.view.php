@@ -17,6 +17,19 @@ $contentH ='Perfil'?>
 
 
 <?php ob_start(); ?>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%; background-color: currentColor;">
+    <span class="close close-Btn pl-5">&times;</span>
+    <p style="color: white;" class="mx-auto">Borrar registro?</p>
+     <div class="modal-footer justify-content-between ">
+      <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
+      <button id ="deletePptProfileBtn" type="button" data = "" class="btn btn-outline-light">Borrar</button>
+    </div>
+  </div>
+
+</div>
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -66,6 +79,11 @@ $contentH ='Perfil'?>
                           </i>
                           Editar
                       </a>
+                              <a class="btn btn-danger btn-sm col-lg-5 mx-auto deleteBtn" data = "<?php echo $datos['id'] ?>" href="#">
+                                  <i class="fa fa-trash">
+                                  </i>
+                                  Borrar
+                              </a>
                           <a class="btn btn-outline-secondary btn-sm col-lg-5 mx-auto" target="_blank" href="<?php echo LINK ?>controllers/print_ppt.php?id=<?php echo $datos['id'] ?>">
                           <i class="fa fa-file-pdf-o">
                           </i>

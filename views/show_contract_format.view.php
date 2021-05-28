@@ -5,6 +5,19 @@ $script = '';
 $contentH ='Datos de Arrendamiento'?>
 
 <?php ob_start(); ?>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%; background-color: currentColor;">
+    <span class="close close-Btn pl-5">&times;</span>
+    <p style="color: white;" class="mx-auto">Borrar registro?</p>
+     <div class="modal-footer justify-content-between ">
+      <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
+      <button id ="deleteCttProfileBtn" type="button" data = "" class="btn btn-outline-light">Borrar</button>
+    </div>
+  </div>
+
+</div>
         <!-- /.card-header -->
         <!-- form start -->
   <div class="form-horizontal" id = ""  style="max-width: 80%; min-width: 80%;">
@@ -172,7 +185,7 @@ $contentH ='Datos de Arrendamiento'?>
                                   </i>
                                   Editar
                               </a>
-                              <a class="btn btn-danger btn-sm col-lg-1 mr-auto ml-1 deleteBtn" btn-target = "deleteCttProfileBtn" id = "<?php echo $contract['id'] ?>" href="#">
+                              <a class="btn btn-danger btn-sm col-lg-1 mr-auto ml-1 deleteBtn" href="#" data ="<?php echo $contract['id'] ?>">
                                   <i class="fa fa-trash">
                                   </i>
                                   Borrar

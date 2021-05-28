@@ -419,7 +419,7 @@ function deleteLessor(id){
 
 $('#deleteLessorBtn').click(function(e){
 	e.preventDefault();
-	var id = $(this).attr('id');
+	var id = $(this).attr('data');
 	modal.hide();
 	deleteLessor(id);
 })
@@ -427,7 +427,7 @@ $('#deleteLessorBtn').click(function(e){
 
 function deleteProperty(id){
 
-	$.get(l + '/controllers/show_propertyt.php?action=delete&id=' + id, function(response){
+	$.get(l + '/controllers/show_property.php?action=delete&id=' + id, function(response){
 			response = JSON.parse(response);
 			if (response.result) { 
 				$('#' + id).remove();
@@ -454,11 +454,42 @@ function deleteProperty(id){
 
 $('#deletePropertyBtn').click(function(e){
 	e.preventDefault();
-	var id = $(this).attr('id');
+	var id = $(this).attr('data');
 	modal.hide();
 	deleteProperty(id);
 })
 
+function deletePptProfile(id){
+
+	$.get(l + '/controllers/show_property.php?action=delete&id=' + id, function(response){
+			response = JSON.parse(response);
+		    if (response.result) { 
+				Swal.fire({
+		    		toast: true,
+		    		position: 'top-end',
+		    		showConfirmButton: false,
+		    		timer: 5000,			        
+		    		icon: 'success',
+			        title: 'Se ha borrado exitosamente!'
+				});
+				setTimeout(window.location.href = l+'/controllers/show_lessee.php', 4000 );
+			}else{
+				Swal.fire({
+		    		toast: true,
+		    		position: 'top-end',
+		    		showConfirmButton: false,
+		    		timer: 5000,			        
+		    		icon: 'error',
+			        title: 'Hubo un error, no se ha borrado!'
+			      })}
+	});
+}
+$('#deletePropertyBtn').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('data');
+	modal.hide();
+	deletePptProfile(id);
+})
 function deleteLeProfile(id){
 
 	$.get(l + '/controllers/show_lessee.php?action=delete&id=' + id, function(response){
@@ -634,7 +665,7 @@ function deleteContract(id){
 
 $('#deleteContractBtn').click(function(e){
 	e.preventDefault();
-	var id = $(this).attr('id');
+	var id = $(this).attr('data');
 	modal.hide();
 	deleteContract(id);
 })
