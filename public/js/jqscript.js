@@ -846,11 +846,9 @@ $('#Email').blur(function(e){
 	})
 
 function validateOthers(){
-			$('.btn-primary').removeAttr('disabled');
 	for(var i=0; i<$('input').length-3;i++){
-		if ($.trim($($('input')[i]).val()) == '' && $($($($('input')[i]).next()[0]).children()[1]).text() !== '' ){
-			$('.btn-primary').attr('disabled', 'disabled');					
-			return true;
+		if ($.trim($($('input')[i]).val()) !== '' && $($($($('input')[i]).next()[0]).children()[1]).text() == '' ){
+			$('.btn-primary').removeAttr('disabled');
 				}
 	}
 }
