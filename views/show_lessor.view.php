@@ -90,7 +90,7 @@ $contentH ='Lista de arrendadores'?>
                           <div class="row">
                             <a class="btn btn-primary btn-sm col-lg-3 mx-auto" href="show_lessor_profile.php?id=<?php echo $lessor['id'] ?>" title="Ver arrendador"><i class="fa fa-folder"></i></a>
                             <a class="btn btn-info btn-sm col-lg-3 mx-auto" href="add_lessor.php?action=edit&id=<?php echo $lessor['id'] ?>" title="Editar arrendador"><i class="fa fa-pencil"></i></a>
-                            <a class="btn btn-danger btn-sm col-lg-3 mx-auto deleteBtn" btn-target = "<?php echo $lessor['id'] ?>" href="#" title="Borrar arrendador"><i class="fa fa-trash"></i></a>
+                            <a class="btn btn-danger btn-sm col-lg-3 mx-auto deleteBtn" data = "<?php echo $lessor['id'] ?>" href="#" title="Borrar arrendador"><i class="fa fa-trash"></i></a>
                           </div>
                         </td>
                       </tr>
