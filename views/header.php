@@ -19,7 +19,7 @@
     <p style="color: white;" class="mx-auto">Borrar registro?</p>
      <div class="modal-footer justify-content-between ">
       <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
-      <button id ="delete" type="button" class="btn btn-outline-light">Borrar</button>
+      <button id ="delete" type="button" data = "" class="btn btn-outline-light">Borrar</button>
     </div>
   </div>
 
