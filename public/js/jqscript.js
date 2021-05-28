@@ -846,7 +846,7 @@ activeModal.click(function(e){
 close.click(function(e){
 	modal.hide();
 });
-window.click(function(e){
+$(window).click(function(e){
   if (e.target == modal) {
     modal.hide();
   }
