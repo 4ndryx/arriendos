@@ -821,6 +821,8 @@ function validatePhone(that){
 		$($($(that).next()[0]).children()[1]).text('Numero de telefono invalido. ');
 	    $(that).attr('style','border-color: red');
 	    return true;
+	}else {
+		$($($(that).next()[0]).children()[1]).text('');
 	}
 	
 }
@@ -840,6 +842,8 @@ function validateEmail(that){
 	    $(that).attr('style','border-color: red');
 		$($($(that).next()[0]).children()[1]).text('Correo invalido. ');
 	    return true;
+	}else {
+		$($($(that).next()[0]).children()[1]).text('');
 	}
 }
 	
