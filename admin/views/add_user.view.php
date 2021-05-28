@@ -19,23 +19,27 @@ $contentH ='Datos del Usuario'?>
           <div class="card-body">
             <div class="row mb-4">
               <div class="form-outline col-md-5 mx-auto">
-                <label class="form-label" for="addUserName">Nombre</label><input type="text" id="addUserName" class="form-control" name="name" />
+                <label class="form-label" for="FName">Nombre</label><input type="text" id="FName" class="form-control" name="name" />
+                 <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
                 
               </div>
               <!-- Email input -->
               <div class="form-outline col-md-5 mx-auto">
-                <label class="form-label" for="addUserPassword">Correo electronico</label><input type="email" id="addUserEmail" class="form-control" name="email" />
+                <label class="form-label" for="Email">Correo electronico</label><input type="email" id="Email" class="form-control" name="email" />
+                 <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
               </div>
             </div>
             <div class="row mb-5">
           <!-- Username input -->
               <div class="form-outline col-md-5 mx-auto">
-                <label class="form-label" for="addUserUsername">Usuario</label><input type="text" id="addUserUsername" class="form-control" name="uname" />
+                <label class="form-label" for="UName">Usuario</label><input type="text" id="UName" class="form-control" name="uname" />
+                 <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
               </div>
 
               <!-- Password input -->
               <div class="form-outline col-md-5 mx-auto">
                 <label class="form-label" for="addUserPassword">Contrasena</label><input type="password" id="addUserPassword" class="form-control" name="password" />
+                 <p style="font-size: 12px; color: gray;">  ej: Andly <br><spam class = "error-message error-input"  style="color: red;"></spam></p>
               </div>
             </div>
                     <div class="row error-message" style="color: red;"><p class="error-message"></p></div>

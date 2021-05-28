@@ -782,6 +782,19 @@ for(var i=0; i<($('input').length-3);i++){
 	}}
 })}
 
+    for(var i=0; i<($('#addUserForm input').length);i++){
+    $($('input')[i]).blur(function(e){
+		if (validateBlurEmpty(this)){
+			$($($(this).next()[0]).children()[1]).text('');
+			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
+		}
+			for(var j=0; j<($('input').length-3);j++){
+		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+			$('.btn-primary').attr('disabled', 'disabled');
+			console.log($('input').length-3);
+	}}
+})}
+
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
@@ -803,7 +816,7 @@ for (var i = 0; i < charValidate.length; i++) {
 	})
 }
 
-var names = $('#FName, #LName');
+var names = $('#FName, #LName, #UName');
 for (var i = 0; i < names.length; i++) {
 	$(names[i]).on('input', function(e){
 		$($($(this).next()[0]).children()[1]).text('');
