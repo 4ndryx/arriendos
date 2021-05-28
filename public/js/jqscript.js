@@ -833,20 +833,23 @@ var modal = $('#myModal');
 var activeModal = $('.deleteBtn');
 var close = $('.close-Btn');
 
-activeModal.click(function(e){
-	e.preventDefault();
-	modal.show();
-	var target = activeModal.attr('btn-target');
-	$('#delete').attr('id', target);
-});
-close.click(function(e){
-	modal.hide();
-});
-$(window).click(function(e){
-  if (e.target == modal) {
-    modal.hide();
-  }
-});
+for (var i = 0; i < activeModal.length; i++) {
+	activeModal.click(function(e){
+		e.preventDefault();
+		modal.show();
+		var target = activeModal.attr('btn-target');
+		$('.delete').attr('id', target);
+	});
+}
+	
+	close.click(function(e){
+		modal.hide();
+	});
+	$(window).click(function(e){
+	  if (e.target == modal) {
+	    modal.hide();
+	  }
+	});
 
 
 
