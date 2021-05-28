@@ -388,7 +388,9 @@ $('#deleteitemBtn').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('data');
 	func = $(this).attr('targeted');
+	if (targeted == 'deleteLessee'){
 	deleteLessee(id);
+	}
 	modal.hide();
 })
 
