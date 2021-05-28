@@ -16,6 +16,7 @@
   <!-- Modal content -->
   <div class="modal-content" style="width: 25%; background-color: currentColor;">
     <span class="close close-Btn">&times;</span>
+    <p>Borrar registro?</p>
      <div class="modal-footer justify-content-between ">
       <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
       <button id ="delete" type="button" class="btn btn-outline-light">Borrar</button>
