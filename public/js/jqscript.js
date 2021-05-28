@@ -837,8 +837,8 @@ for (var i = 0; i < activeModal.length; i++) {
 	$(activeModal[i]).click(function(e){
 		e.preventDefault();
 		modal.show();
-		var target = $(this).attr('btn-target');
-		$('#delete').attr('id', "");
+		var targeted = $(this).attr('btn-target');
+		$('#delete').attr('id', targeted);
 	});
 }
 	
