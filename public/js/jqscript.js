@@ -18,7 +18,7 @@ $(function(){
 			}else {
 				$('#userData').append($('<p id = "error"></p>'));
 				$('#error').text('');
-				$('#error').text('Dato(s) errado(s)');
+				$('#error').text(response.error);
 			}
 
 		});
