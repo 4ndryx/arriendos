@@ -811,11 +811,13 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 		}
 })}
 for(var j=0; j<$('#addUserForm input').length;j++){
-    $($('input')[i]).blur(function(e){
+    $($('#addUserForm input')[i]).blur(function(e){
 		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
+			continue;
 	}else {
 			$('.btn-primary').removeAttr('disabled');
+			continue;
 		
 	}})}
 
