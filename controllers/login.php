@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					  'follow_redirects' => TRUE
 					));
 					$request->setHeader(array(
-					  'x-trustifi-key' => '{{fff5f531024c3fce0bbb63eb5d4e4310c663f5949bc7be1d}}',
-					  'x-trustifi-secret' => '{{610cc9584a932935e3076e8ae9b8dcd1}}',
+					  'x-trustifi-key' => '{fff5f531024c3fce0bbb63eb5d4e4310c663f5949bc7be1d}',
+					  'x-trustifi-secret' => '{610cc9584a932935e3076e8ae9b8dcd1}',
 					  'Content-Type' => 'application/json'
 					));
 					$request->setBody('{\n  "recipients": [{"email": '.$email.', "name": '.$verif['name'].'}],\n  "lists": [],\n  "contacts": [],\n  "attachments": [],\n  "title": '.$subject.',\n  "html": '.$mailContent.',\n  "methods": { \n    "postmark": false,\n    "secureSend": false,\n    "encryptContent": false,\n    "secureReply": false \n  }\n}');
