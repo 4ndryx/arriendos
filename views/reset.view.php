@@ -41,9 +41,8 @@
 			</div>
 			<input type="hidden" name="fgt" value="<?php echo $fgt ?>">
 			<button id="" class="iniciar botiniciar" name="resetSubmit" >
-				Siguiente<i class="mdi mdi-send"></i>
+				Siguiente<i class="mdi mdi-send fa fa-send"></i>
 			</button>
-			<button class="startSess" href="<?php LINK ?>/controllers/login.php"><i class="mdi mdi-user"></i> Iniciar Session</button>
 		</form>
 	</div>
     <script src="<?php echo LINK ?>public/js/vendor/jquery-3.6.0.min.js"></script>

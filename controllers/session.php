@@ -19,5 +19,13 @@ function verifySession(){
 }
 
 
+function dataClean($data){
+	$data = strip_tags($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
+
+
 verifySession();
 ?>

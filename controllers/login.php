@@ -8,10 +8,16 @@ if (isset($_GET['logout'])){
 require FOLDER.'models/login.model.php';
 require FOLDER.'/vendor/autoload.php';
 
+function dataClean($data){
+	$data = strip_tags($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
 		if(!empty($_POST['fgt_email'])){
-			$email = $_POST['fgt_email'];
+			$email = dataClean($_POST['fgt_email']);
 			$verif = verifyEmail($email);
 			if ($verif){
 				$uniqIdStr = md5(uniqid(mt_rand()));
@@ -56,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		}else{
 			die(json_encode(array('result' => false, 'msg' => 'Por favor ingresar un correo.')));}
 	}else{
-		$uname = $_POST['uname'];
-		$password = $_POST['password'];
+		$uname = dataClean($_POST['uname']);
+		$password = dataClean($_POST['password']);
 		
 		if (!empty($uname) && !empty($password)){
 
@@ -68,6 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						$_SESSION['uname'] = $user['uname'];
 						$_SESSION['name'] = $user['name'];
 						$_SESSION['lastAccess'] = date('Y-n-j H:i:s');
+						$_SESSION["token"] = md5(uniqid(mt_rand(), true));
 
 						if(ajax()){die(json_encode(array('result' => true)));}
 

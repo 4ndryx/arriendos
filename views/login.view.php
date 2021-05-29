@@ -41,7 +41,7 @@
 			</div>
 			<a href="#" class="fgt_pass">Olvide mi contrasña</a>
 			<button id="SignIn" class="iniciar botiniciar">
-				Iniciar Sesión <i class="mdi mdi-send"></i>
+				Iniciar Sesión <i class="mdi mdi-send fa fa-send"></i>
 			</button>
 		</form>
 	</div>

@@ -5,7 +5,7 @@ require FOLDER.'controllers/session.php';
 require FOLDER.'models/show_contract_format.model.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
-	$id = htmlspecialchars($_GET['id']);
+	$id = dataClean($_GET['id']);
 	# code...
 	$contract = getContract($id);
 	if ($contract) {

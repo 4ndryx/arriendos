@@ -5,7 +5,7 @@ require FOLDER.'/controllers/session.php';
 require FOLDER.'models/show_property_profile.model.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])){
-	$id = $_GET['id'];
+	$id = dataClean($_GET['id']);
 
 	$datos = getProperty($id);
 	$imgs = explode(', ', $datos['img']);

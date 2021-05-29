@@ -8,8 +8,8 @@ $properties = getAllProperties();
 
 if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['action']) && isset($_GET['id'])){
 	if (!empty($_GET['action']) && !empty($_GET['id'])) {
-		$action =htmlspecialchars($_GET['action']);
-		$id =htmlspecialchars($_GET['id']);
+		$action =dataClean($_GET['action']);
+		$id =dataClean($_GET['id']);
 
 		if ($action == 'delete'){
 			$deleteProperty = deleteProperty($id);

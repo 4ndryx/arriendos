@@ -6,7 +6,7 @@ require FOLDER.'models/reset.model.php';
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){
 	if(isset($_GET['fgt_pass'])){
 		if(!empty($_GET['fgt_pass'])){
-			$fgt = $_GET['fgt_pass'];
+			$fgt = dataClean($_GET['fgt_pass']);
 		}else{
 			// header('Location:'.LINK.'controllers/login.php');
 		}
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				if ($_POST['pass'] != $_POST['passConf']) {
 					if(ajax()){die(json_encode(['result' => false, 'msg' => 'Las contrasenas deben coincidir']));}
 				}else{
-					$fgt = $_POST['fgt'];
+					$fgt = dataClean($_POST['fgt']);
 					$newPass = password_hash($_POST['pass'], PASSWORD_BCRYPT);
 					$savePass = updatePass($fgt, $newPass);
 					if ($savePass) {

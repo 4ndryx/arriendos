@@ -726,6 +726,8 @@ $('.fgt_pass').click(function(e){e.preventDefault;
 			response = JSON.parse(response);
 
 				$('.registrar').text(response.msg);
+				$('.iniciar .botiniciar').remove();
+				$('#passReset').append($('<a href="'+l+'/controllers/login.php"><button class="startSess"> Iniciar Session<i class="mdi mdi-user fa fa-send"></i></button></a>'));
 			}else {
 				$('#passReset').append($('<p id = "error"></p>'));
 				$('#error').text('');

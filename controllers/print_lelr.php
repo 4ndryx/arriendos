@@ -3,8 +3,8 @@ require '../public/config.php';
 require FOLDER.'public/tcpdf/tcpdf.php';
 
 if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['type']) && !empty($_GET['type'])){
-	$id = $_GET['id'];
-	$kind = $_GET['type'];
+	$id = ($_GET['id']);
+	$kind = ($_GET['type']);
 }
 if ($kind == 'lessee'){
 	require FOLDER.'models/show_lessee_profile.model.php';

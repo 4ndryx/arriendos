@@ -5,11 +5,11 @@ require FOLDER.'models/add_property.model.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-	$adress = $_POST['adress'];
-	$area = $_POST['area']; 
-	$type = $_POST['type']; 
-	$state = $_POST['state'];
-	$description = $_POST['description'];
+	$adress = dataClean($_POST['adress']);
+	$area = dataClean($_POST['area']); 
+	$type = dataClean($_POST['type']); 
+	$state = dataClean($_POST['state']);
+	$description = dataClean($_POST['description']);
 
 	$imgNames = $_FILES['img']['name'];
 	$imgTempNames = $_FILES['img']['tmp_name'];
@@ -66,8 +66,8 @@ $propertyedit = array(
 
 if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['action']) && isset($_GET['id'])){
 	if (!empty($_GET['action']) && !empty($_GET['id'])) {
-		$action =htmlspecialchars($_GET['action']);
-		$id =htmlspecialchars($_GET['id']);
+		$action =dataClean($_GET['action']);
+		$id =dataClean($_GET['id']);
 
 		if ($action == 'edit'){
 			$propertyedit = getProperty($id);
