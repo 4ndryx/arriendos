@@ -801,7 +801,7 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 })}
 
     for(var i=0; i<($('#addUserForm input').length);i++){
-    $($('input')[i]).blur(function(e){
+    $($('#addUserForm input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
@@ -809,14 +809,17 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 			$($($(this).next()[0]).children()[1]).text('');
 			
 		}
-			for(var j=0; j<$('input').length;j++){
+})}
+for(var j=0; j<$('#addUserForm input').length;j++){
+    $($('input')[i]).blur(function(e){
 		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
 			$('.btn-primary').removeAttr('disabled');
 		
-	}}
-})}
+	}})}
+
+
     for(var i=22; i>= 22 && i<= 28;i++){
     $($('#createContractForm input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
