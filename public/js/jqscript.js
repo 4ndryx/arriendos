@@ -798,11 +798,25 @@ for(var i=0; i<($('input').length-3);i++){
 		
 	}}
 })}
+    for(var i=0; i<($('#createContractForm input').length);i++){
+    $($('input')[i]).blur(function(e){
+		if (validateBlurEmpty(this)){
+			$($($(this).next()[0]).children()[1]).text('');
+			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
+		}
+			for(var j=0; j<$('input');j++){
+		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+			$('.btn-primary').attr('disabled', 'disabled');
+	}else {
+			$('.btn-primary').removeAttr('disabled');
+		
+	}}
+})}
 
 function validateNameChars(that){
 	$(that).attr('style','border: 1px solid #ced4da;');
 
-	var regex = /^[a-zA-Z]+$/;
+	var regex = /^[a-zA-Z\s]+$/;
 
 	if(regex.test($(that).val())){
 	    return true;
