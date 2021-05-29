@@ -7,7 +7,6 @@ if (isset($_GET['logout'])){
 }
 require FOLDER.'models/login.model.php';
 require FOLDER.'/vendor/autoload.php';
-use Mailgun\Mailgun;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
@@ -29,18 +28,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 					// mail($to, $subject, $mailContent, $headers);
 
-					//Credentials
-					$mg = new Mailgun("d2cb18512bad1157edd2d1c8148c923a-fa6e84b7-a7a171d0");
-					$domain = "sandbox8f266bd3780543f7b2895f3f0743ea1f.mailgun.org";
-					//email
-					$mg->sendMessage($domain, array(
-					'from'=>'SIADAR@sandbox8f266bd3780543f7b2895f3f0743ea1f.mailgun.org',
-					'to'=> $to,
-					'subject' => $subject,
-					'text' => $mailContent
-					    )
-					);
+					$email = new \SendGrid\Mail\Mail(); 
+					$email->setFrom("andlypierre@gmail.com", "Example User");
+					$email->setSubject($subject);
+					$email->addTo($to, $verif['name']);
+					// $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+					$email->addContent("text/html", $mailContent);
+					
+					$sendgrid = new \SendGrid('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');
 
+					try {
+					    $response = $sendgrid->send($email);
+					    print $response->statusCode() . "\n";
+					    print_r($response->headers());
+					    print $response->body() . "\n";
+					} catch (Exception $e) {
+					    echo 'Caught exception: '. $e->getMessage() ."\n";
+					}
 
 					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
 				}else{
