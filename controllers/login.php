@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 					// mail($to, $subject, $mailContent, $headers);
 
-					require 'vendor/autoload.php';
+					require Folder.'vendor/autoload.php';
 					use Mailgun\Mailgun;
 					//Credentials
 					$mg = new Mailgun("d2cb18512bad1157edd2d1c8148c923a-fa6e84b7-a7a171d0");
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					'subject' => $subject,
 					'text' => $mailContent
 					    )
-					)
+					);
 
 
 					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
