@@ -814,7 +814,7 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 		
 	}}
 })}
-    for(var i=25; i>= 25 && i<= 31;i++){
+    for(var i=22; i>= 25 && i<= 28;i++){
     $($('#createContractForm input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
