@@ -19,7 +19,7 @@
  */
 
 /** Class representing a HTTP request message */
-require_once 'HTTP/Request2.php';
+require_once FOLDER.'/vendor/pear/http_request2/HTTP/Request2.php';
 
 /**
  * Stores cookies and passes them between HTTP requests
