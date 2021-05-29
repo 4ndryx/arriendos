@@ -6,7 +6,7 @@ if (isset($_GET['logout'])){
 	session_destroy();
 }
 require FOLDER.'models/login.model.php';
-//require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
+require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					$subject = 'Solicitud de reseteo de contrasena';
 					$mailContent = 'Querido '.$verif['name'].', <br />Se ha hecho una solicitud de reseteo de contrasena para su cuenta. Si ha sido por accidente, ignore este mensaje y no pasara nada. <br />Para resetear su contrasena, dale click al siguiente enlace: <a href="'. $passResetLink .'">'. $passResetLink .'</a><br><br> Saludos.';
 
-					require_once 'HTTP/Request2.php';
 					$request = new HTTP_Request2();
 					$request->setUrl('https://be.trustifi.com/api/i/v1/email');
 					$request->setMethod(HTTP_Request2::METHOD_POST);
