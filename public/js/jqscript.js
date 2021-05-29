@@ -816,6 +816,7 @@ for(var j=0; j<$('#addUserForm input').length;j++){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
 			$('.btn-primary').removeAttr('disabled');
+			console.log($('.btn-primary').removeAttr('disabled'));
 		
 	}})
 			continue;
