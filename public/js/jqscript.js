@@ -76,7 +76,7 @@ function validateEmpty(){
 function addUser(){
 
 var user = $('#addUserForm').serialize();
-		$.post(l + '/controllers/add_user.php', user, function(response){
+		$.post(l + '/admin/controllers/add_user.php', user, function(response){
 			response = JSON.parse(response);
 			if (response.result) { 
 				Swal.fire({
