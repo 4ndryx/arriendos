@@ -806,7 +806,7 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
-			for(var j=0; j<$('input');j++){
+			for(var j=0; j<$('input').length;j++){
 		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
@@ -814,7 +814,7 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 		
 	}}
 })}
-    for(var i=22; i>= 25 && i<= 28;i++){
+    for(var i=22; i>= 22 && i<= 28;i++){
     $($('#createContractForm input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
@@ -823,7 +823,7 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 			$($($(this).next()[0]).children()[1]).text('');
 			
 		}
-			for(var j=25; j>= 25 && j<= 31;j++){
+			for(var j=22; j>= 22 && j<= 28;j++){
 		if ($.trim($($('#createContractForm input')[j]).val()) == '' || $($($($('#createContractForm input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
