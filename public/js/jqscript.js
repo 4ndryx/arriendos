@@ -805,6 +805,9 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
+		}else {
+			$($($(this).next()[0]).children()[1]).text('');
+			
 		}
 			for(var j=0; j<$('input').length;j++){
 		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
