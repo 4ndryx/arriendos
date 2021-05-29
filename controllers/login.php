@@ -37,13 +37,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					
 					$sendgrid = new \SendGrid('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');
 
-					try {
 					    $response = $sendgrid->send($email);
-					    // print $response->statusCode() . "\n";
-					    // print_r($response->headers());
-					    // print $response->body() . "\n";
-					} /*catch (Exception $e) {*/
-					    // echo 'Caught exception: '. $e->getMessage() ."\n";
+					// try {
+					//     print $response->statusCode() . "\n";
+					//     print_r($response->headers());
+					//     print $response->body() . "\n";
+					// } catch (Exception $e) {
+					//     echo 'Caught exception: '. $e->getMessage() ."\n";
 					// }
 
 					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
