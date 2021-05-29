@@ -1,1 +1,2 @@
-{ "require": { "ext-gd": "*" } }
+{ "require": { "ext-gd": "*",
+        "pear/http_request2": "2.2.1" } }

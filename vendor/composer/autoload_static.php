@@ -6,13 +6,26 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit678af9801a12cd87e21bcae145f4e822
 {
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HTTP_Request2' => 
+            array (
+                0 => __DIR__ . '/..' . '/pear/http_request2',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Net_URL2' => __DIR__ . '/..' . '/pear/net_url2/Net/URL2.php',
+        'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixesPsr0 = ComposerStaticInit678af9801a12cd87e21bcae145f4e822::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit678af9801a12cd87e21bcae145f4e822::$classMap;
 
         }, null, ClassLoader::class);
