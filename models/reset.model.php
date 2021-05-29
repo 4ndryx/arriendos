@@ -7,7 +7,7 @@ function updatePass($fgt, $newPass){
 		header('Location:'.LINK.'error.php');
 	}
 
-	$statement = $con->prepare('UPDATE administrators set pass = :pass WHERE fgt_pass = :fgt_pass');
+	$statement = $con->prepare('UPDATE administrators set password = :pass WHERE fgt_pass = :fgt_pass');
 
 	$result = $statement->execute(array(
 							':fgt_pass' => $fgt,
