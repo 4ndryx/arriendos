@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					if(ajax()){die(json_encode(['result' => false, 'msg' => 'Las contrasenas deben coincidir']));}
 				}else{
 					$fgt = $_POST['fgt'];
-					$newPass = $_POST['pass'];
+					$newPass = password_hash($_POST['pass'], PASSWORD_BCRYPT);
 					$savePass = updatePass($fgt, $newPass);
 					if ($savePass) {
 						if(ajax()){die(json_encode(['result' => true, 'msg' => 'Se ha cambiado la contrasena con exito.']));}
