@@ -819,6 +819,9 @@ for(var i=0; i<($('#addPropertyForm input').length-4);i++){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
+		}else {
+			$($($(this).next()[0]).children()[1]).text('');
+			
 		}
 			for(var j=25; j>= 25 && j<= 31;j++){
 		if ($.trim($($('#createContractForm input')[j]).val()) == '' || $($($($('#createContractForm input')[j]).next()[0]).children()[1]).text() != '' ){
