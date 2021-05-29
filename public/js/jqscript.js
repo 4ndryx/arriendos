@@ -781,10 +781,6 @@ for(var i=0; i<($('input').length-3);i++){
 	}else {
 			$('.btn-primary').removeAttr('disabled');
 		
-	}
-else {
-			$('.btn-primary').removeAttr('disabled');
-		
 	}}
 })}
 
@@ -798,10 +794,6 @@ else {
 		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
-			$('.btn-primary').removeAttr('disabled');
-		
-	}
-else {
 			$('.btn-primary').removeAttr('disabled');
 		
 	}}
