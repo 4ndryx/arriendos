@@ -1,4 +1,5 @@
 { "require": { "ext-gd": "*",
         "pear/http_request2": "2.2.1",
-                "swiftmailer/swiftmailer": "^6.2",
-                "mailgun/mailgun-php": "~1.7.1" } }
+                "mailgun/mailgun-php": "~1.7.1",
+                "phpmailer/phpmailer": "5.2.8",
+                "sendgrid/sendgrid": "~7" } }

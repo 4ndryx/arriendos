@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'e4ec926f11815e4875f0b69bea7edb56b22a4111',
+    'reference' => 'ba703a11fcf490a351447850a0db75eee96dd961',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,25 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'e4ec926f11815e4875f0b69bea7edb56b22a4111',
-    ),
-    'doctrine/lexer' => 
-    array (
-      'pretty_version' => '1.2.1',
-      'version' => '1.2.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
-    ),
-    'egulias/email-validator' => 
-    array (
-      'pretty_version' => '3.1.1',
-      'version' => '3.1.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'c81f18a3efb941d8c4d2e025f6183b5c6d697307',
+      'reference' => 'ba703a11fcf490a351447850a0db75eee96dd961',
     ),
     'guzzle/batch' => 
     array (
@@ -237,14 +219,48 @@
       ),
       'reference' => 'b14fbe2ddb0b9f94f5b24cf08783d599f776fff0',
     ),
-    'swiftmailer/swiftmailer' => 
+    'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.2.7',
-      'version' => '6.2.7.0',
+      'pretty_version' => 'v5.2.8',
+      'version' => '5.2.8.0',
       'aliases' => 
       array (
       ),
-      'reference' => '15f7faf8508e04471f666633addacf54c0ab5933',
+      'reference' => 'd3802c597bff8f6c2ccfa3eab2a511aa01b8d68f',
+    ),
+    'sendgrid/php-http-client' => 
+    array (
+      'pretty_version' => '3.14.0',
+      'version' => '3.14.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7880d5aecc53856802130ba83af1dfcf942e9767',
+    ),
+    'sendgrid/sendgrid' => 
+    array (
+      'pretty_version' => '7.9.2',
+      'version' => '7.9.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ab0023a6233f39e408b5eb8c4299f20790f5f5a7',
+    ),
+    'sendgrid/sendgrid-php' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
+    'starkbank/ecdsa' => 
+    array (
+      'pretty_version' => '0.0.4',
+      'version' => '0.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9369d35ed9019321adb4eb9fd3be21357d527c74',
     ),
     'symfony/event-dispatcher' => 
     array (
@@ -254,51 +270,6 @@
       array (
       ),
       'reference' => 'a77e974a5fecb4398833b0709210e3d5e334ffb0',
-    ),
-    'symfony/polyfill-iconv' => 
-    array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '63b5bb7db83e5673936d6e3b8b3e022ff6474933',
-    ),
-    'symfony/polyfill-intl-idn' => 
-    array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '65bd267525e82759e7d8c4e8ceea44f398838e65',
-    ),
-    'symfony/polyfill-intl-normalizer' => 
-    array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '8590a5f561694770bdcd3f9b5c69dde6945028e8',
-    ),
-    'symfony/polyfill-mbstring' => 
-    array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '2df51500adbaebdc4c38dea4c89a2e131c45c8a1',
-    ),
-    'symfony/polyfill-php72' => 
-    array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '9a142215a36a3888e30d0a9eeea9766764e96976',
     ),
   ),
 );
