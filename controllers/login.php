@@ -9,7 +9,7 @@ require FOLDER.'models/login.model.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
-		require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
+		// require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
 
 		if(!empty($_POST['fgt_email'])){
 			$email = $_POST['fgt_email'];
