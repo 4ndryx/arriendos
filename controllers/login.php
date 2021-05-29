@@ -39,12 +39,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 					try {
 					    $response = $sendgrid->send($email);
-					    print $response->statusCode() . "\n";
-					    print_r($response->headers());
-					    print $response->body() . "\n";
-					} catch (Exception $e) {
-					    echo 'Caught exception: '. $e->getMessage() ."\n";
-					}
+					    // print $response->statusCode() . "\n";
+					    // print_r($response->headers());
+					    // print $response->body() . "\n";
+					} /*catch (Exception $e) {*/
+					    // echo 'Caught exception: '. $e->getMessage() ."\n";
+					// }
 
 					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
 				}else{
