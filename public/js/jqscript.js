@@ -776,7 +776,7 @@ for(var i=0; i<($('input').length-3);i++){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
 			for(var j=0; j<($('input').length-3);j++){
-		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
 			$('.btn-primary').removeAttr('disabled');
@@ -791,7 +791,7 @@ for(var i=0; i<($('input').length-3);i++){
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
 			for(var j=0; j<$('input');j++){
-		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
 			$('.btn-primary').removeAttr('disabled');
