@@ -6,11 +6,10 @@ if (isset($_GET['logout'])){
 	session_destroy();
 }
 require FOLDER.'models/login.model.php';
-//require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
+require FOLDER.'/vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
-
 		if(!empty($_POST['fgt_email'])){
 			$email = $_POST['fgt_email'];
 			$verif = verifyEmail($email);
@@ -20,36 +19,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 				if ($updateUser){
 					$passResetLink = LINK.'controllers/reset.php?fgt_pass='. $uniqIdStr;
 
-					$to = $email;
+					$to = $verif['email'];
 					$subject = 'Solicitud de reseteo de contrasena';
 					$mailContent = 'Querido '.$verif['name'].', <br />Se ha hecho una solicitud de reseteo de contrasena para su cuenta. Si ha sido por accidente, ignore este mensaje y no pasara nada. <br />Para resetear su contrasena, dale click al siguiente enlace: <a href="'. $passResetLink .'">'. $passResetLink .'</a><br><br> Saludos.';
+					// $headers = "MIME-VERSION: 1.0" . "rn";
+					// $headers .= "Conten-type:text/html;charset=UTF-8". "rn";
+					// $headers .= "From Tu<[email protected]>". "rn";
 
-					require_once FOLDER.'/vendor/pear/http_request2/Request2.php';
-					$request = new HTTP_Request2();
-					$request->setUrl('https://be.trustifi.com/api/i/v1/email');
-					$request->setMethod(HTTP_Request2::METHOD_POST);
-					$request->setConfig(array(
-					  'follow_redirects' => TRUE
-					));
-					$request->setHeader(array(
-					  'x-trustifi-key' => '{{fff5f531024c3fce0bbb63eb5d4e4310c663f5949bc7be1d}}',
-					  'x-trustifi-secret' => '{{610cc9584a932935e3076e8ae9b8dcd1}}',
-					  'Content-Type' => 'application/json'
-					));
-					$request->setBody('{\n  "recipients": [{"email": '.$email.', "name": '.$verif['name'].'}],\n  "lists": [],\n  "contacts": [],\n  "attachments": [],\n  "title": '.$subject.',\n  "html": '.$mailContent.',\n  "methods": { \n    "postmark": false,\n    "secureSend": false,\n    "encryptContent": false,\n    "secureReply": false \n  }\n}');
-					try {
-					  $response = $request->send();
-					  if ($response->getStatus() == 200) {
-					    // echo $response->getBody();
-					  }
-					  else {
-					    // echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-					    // $response->getReasonPhrase();
-					  }
-					}
-					catch(HTTP_Request2_Exception $e) {
-					  echo 'Error: ' . $e->getMessage();
-					}
+					// mail($to, $subject, $mailContent, $headers);
+
+					require 'vendor/autoload.php';
+					use Mailgun\Mailgun;
+					//Credentials
+					$mg = new Mailgun("d2cb18512bad1157edd2d1c8148c923a-fa6e84b7-a7a171d0");
+					$domain = "sandbox8f266bd3780543f7b2895f3f0743ea1f.mailgun.org";
+					//email
+					$mg->sendMessage($domain, array(
+					'from'=>'SIADAR@sandbox8f266bd3780543f7b2895f3f0743ea1f.mailgun.org',
+					'to'=> $to,
+					'subject' => $subject,
+					'text' => $mailContent
+					    )
+					)
+
 
 					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
 				}else{
