@@ -6,10 +6,10 @@ if (isset($_GET['logout'])){
 	session_destroy();
 }
 require FOLDER.'models/login.model.php';
+require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
-		// require FOLDER.'public/HTTP_Request2-2.4.1/HTTP/Request2.php';
 
 		if(!empty($_POST['fgt_email'])){
 			$email = $_POST['fgt_email'];
