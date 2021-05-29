@@ -4,11 +4,6 @@ $style = '';
 $script = ''; 
 $contentH ='Perfil'?>
 
-
-<?php ob_start(); ?>
-<!-- <link rel="stylesheet" href="<?php echo LINK ?>public/css/admin-lte.min.css"> -->
-<?php $style = ob_get_clean(); ?>
-
 <?php ob_start(); ?>
 <!-- <script src="<?php echo LINK ?>public/js/datatables/jquery.dataTables.min.js"></script> -->
     <!-- <script src="<?php echo LINK ?>public/js/bootstrap-bundle.min.js"></script> -->

@@ -3,8 +3,8 @@ require 'head.php';
     require 'header.php'; ?>
             <div class="content-wrapper mt-4" style="margin-left: 1px">
                 <section class="content-header ">
-                  <div class="container-fluid  mt-5">
-                    <div class="row mb-2  mt-5">
+                  <div class="container-fluid  mt-3">
+                    <div class="row mb-2  mt-3">
                       <div class="col-sm-6">
                         <h1><?php echo $contentH ?></h1>
                       </div>

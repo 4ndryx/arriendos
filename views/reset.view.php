@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Resetear contrasena</title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo LINK; ?>public/img/logo/logosn.png">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/normalize.css">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/MaterialDesign-Webfont-master/css/materialdesignicons.css">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/login.css">
@@ -42,7 +43,7 @@
 			<button id="" class="iniciar botiniciar" name="resetSubmit" >
 				Siguiente<i class="mdi mdi-send"></i>
 			</button>
-			<button class="startSess" href="<?php LINK ?>/controllers/login.php&quot;"><i class="mdi mdi-user"></i> Iniciar Session</button>
+			<button class="startSess" href="<?php LINK ?>/controllers/login.php"><i class="mdi mdi-user"></i> Iniciar Session</button>
 		</form>
 	</div>
     <script src="<?php echo LINK ?>public/js/vendor/jquery-3.6.0.min.js"></script>

@@ -6,7 +6,6 @@ $contentH ='Lista de arrendadores'?>
 
 <?php ob_start(); ?>
 <link rel="stylesheet" href="<?php echo LINK ?>public/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="<?php echo LINK ?>public/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="<?php echo LINK ?>public/css/buttons.bootstrap4.min.css">
 <?php $style = ob_get_clean(); ?>
 

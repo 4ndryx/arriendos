@@ -10,9 +10,6 @@
     <!-- favicon
 		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo LINK; ?>public/img/logo/logosn.png">
-    <!-- Google Fonts
-		============================================ -->
-    <!-- <link href="<?php echo LINK; ?>ps://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"> -->
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK; ?>public/css/bootstrap.min.css">
@@ -25,9 +22,6 @@
     <!-- main CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK; ?>public/css/main.css">
-    <!-- mCustomScrollbar CSS
-		============================================ -->
-    <link rel="stylesheet" href="<?php echo LINK; ?>public/css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK; ?>public/css/style.css">
@@ -40,7 +34,7 @@
 		============================================ -->
     <link rel="stylesheet" href="<?php echo LINK ?>public/css/admin-lte.min.css">
     <link rel="stylesheet" href="<?php echo LINK ?>public/css/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <script src="<?php echo LINK; ?>public/js/vendor/modernizr-2.8.3.min.js"></script>
     <?= $style ?>
 
-    <script src="<?php echo LINK; ?>public/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>

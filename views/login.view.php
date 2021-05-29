@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Iniciar Sesión</title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo LINK; ?>public/img/logo/logosn.png">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/normalize.css">
     <link rel="stylesheet" href="<?php echo LINK; ?>public/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo LINK; ?>public/css/login.css">

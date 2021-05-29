@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$newPass = password_hash($_POST['pass'], PASSWORD_BCRYPT);
 					$savePass = updatePass($fgt, $newPass);
 					if ($savePass) {
-						if(ajax()){die(json_encode(['result' => true, 'msg' => 'Se ha cambiado la contrasena con exito.']));}
+						if(ajax()){die(json_encode(['result' => true, 'msg' => 'Se ha cambiado la contrasena con exito. Porfavor inicie session normalmente.']));}
 					}else{if(ajax()){die(json_encode(['result' => false, 'msg' => 'Ocurrio algun error, vuelve a intentarlo']));}}
 				}
 		}else{
