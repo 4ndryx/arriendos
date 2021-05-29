@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					$email->addTo($to, $verif['name']);
 					// $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 					$email->addContent("text/html", $mailContent);
-					
+
 					$sendgrid = new \SendGrid('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');
 
 					    $response = $sendgrid->send($email);
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					//     echo 'Caught exception: '. $e->getMessage() ."\n";
 					// }
 
-					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada.')));
+					die(json_encode(array('result' => true, 'msg' => 'Le ha sido enviado un correo, porfavor revise su bandeja de entrada. O revise la bandeja de spam ')));
 				}else{
 					die(json_encode(array('result' => false, 'msg' => 'Ocurrio un error, intente de nuevo.')));
 				}

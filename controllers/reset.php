@@ -2,7 +2,7 @@
 
 require '../public/config.php';
 
-require FOLDER.'models/login.model.php';
+require FOLDER.'models/reset.model.php';
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){
 	if(isset($_GET['fgt_pass'])){
 		if(!empty($_GET['fgt_pass'])){
