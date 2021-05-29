@@ -7,7 +7,6 @@ if (isset($_GET['logout'])){
 }
 require FOLDER.'models/login.model.php';
 require FOLDER.'/vendor/autoload.php';
-require Folder.'vendor/autoload.php';		
 use Mailgun\Mailgun;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
