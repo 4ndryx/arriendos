@@ -778,10 +778,14 @@ for(var i=0; i<($('input').length-3);i++){
 			for(var j=0; j<($('input').length-3);j++){
 		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
-	}}else {
+	}else {
 			$('.btn-primary').removeAttr('disabled');
 		
 	}
+else {
+			$('.btn-primary').removeAttr('disabled');
+		
+	}}
 })}
 
     for(var i=0; i<($('#addUserForm input').length);i++){
@@ -793,10 +797,14 @@ for(var i=0; i<($('input').length-3);i++){
 			for(var j=0; j<$('input');j++){
 		if ($.trim($($('input')[j]).val()) == '' && $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
-	}}else {
+	}else {
 			$('.btn-primary').removeAttr('disabled');
 		
 	}
+else {
+			$('.btn-primary').removeAttr('disabled');
+		
+	}}
 })}
 
 function validateNameChars(that){
