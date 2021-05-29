@@ -814,12 +814,12 @@ for(var j=0; j<$('#addUserForm input').length;j++){
     $($('#addUserForm input')[i]).blur(function(e){
 		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
-			continue;
 	}else {
 			$('.btn-primary').removeAttr('disabled');
-			continue;
 		
-	}})}
+	}})
+			continue;
+}
 
 
     for(var i=22; i>= 22 && i<= 28;i++){
