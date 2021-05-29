@@ -7,6 +7,8 @@ if (isset($_GET['logout'])){
 }
 require FOLDER.'models/login.model.php';
 require FOLDER.'/vendor/autoload.php';
+require Folder.'vendor/autoload.php';		
+use Mailgun\Mailgun;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if (isset($_POST['fgt_email'])) {
@@ -28,8 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 					// mail($to, $subject, $mailContent, $headers);
 
-					require Folder.'vendor/autoload.php';
-					use Mailgun\Mailgun;
 					//Credentials
 					$mg = new Mailgun("d2cb18512bad1157edd2d1c8148c923a-fa6e84b7-a7a171d0");
 					$domain = "sandbox8f266bd3780543f7b2895f3f0743ea1f.mailgun.org";
