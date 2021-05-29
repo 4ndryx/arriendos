@@ -784,6 +784,22 @@ for(var i=0; i<($('input').length-3);i++){
 	}}
 })}
 
+
+for(var i=0; i<($('#addPropertyForm input').length-4);i++){
+    $($('input')[i]).blur(function(e){
+		if (validateBlurEmpty(this)){
+			$($($(this).next()[0]).children()[1]).text('');
+			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
+		}
+			for(var j=0; j<($('input').length-4);j++){
+		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+			$('.btn-primary').attr('disabled', 'disabled');
+	}else {
+			$('.btn-primary').removeAttr('disabled');
+		
+	}}
+})}
+
     for(var i=0; i<($('#addUserForm input').length);i++){
     $($('input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
@@ -798,14 +814,14 @@ for(var i=0; i<($('input').length-3);i++){
 		
 	}}
 })}
-    for(var i=0; i<($('#createContractForm input').length);i++){
+    for(var i=25; i>= 25 && i<= 31;i++){
     $($('input')[i]).blur(function(e){
 		if (validateBlurEmpty(this)){
 			$($($(this).next()[0]).children()[1]).text('');
 			$($($(this).next()[0]).children()[1]).text('Este campo no peude quedarse vacio. ');
 		}
-			for(var j=0; j<$('input');j++){
-		if ($.trim($($('input')[j]).val()) == '' || $($($($('input')[j]).next()[0]).children()[1]).text() != '' ){
+			for(var j=25; j>= 25 && j<= 31;j++){
+		if ($.trim($($('#createContractForm input')[j]).val()) == '' || $($($($('#createContractForm input')[j]).next()[0]).children()[1]).text() != '' ){
 			$('.btn-primary').attr('disabled', 'disabled');
 	}else {
 			$('.btn-primary').removeAttr('disabled');
