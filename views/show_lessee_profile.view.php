@@ -20,7 +20,7 @@ $contentH ='Perfil'?>
   </div>
 
 </div>
-    <div class="row mx-auto" style="max-width: 80%; min-width: 80%; displaygf:contents;">
+    <div class="row mx-auto" style="max-width: 80%; min-width: 80%;">
     <div class="card mr-4 card-warning  card-primary card-outline" style="max-width: 27%; min-width: 27%;">
             <div class="card-body box-profile">
                     <div class="text-center">
