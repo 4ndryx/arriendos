@@ -41,7 +41,7 @@
 			</div>
 			<input type="hidden" name="fgt" value="<?php echo $fgt ?>">
 			<button id="" class="iniciar botiniciar" name="resetSubmit" >
-				Siguiente<i class="mdi mdi-send fa fa-send"></i>
+				Siguiente<i class="mdi mdi-send"></i>
 			</button>
 		</form>
 	</div>
