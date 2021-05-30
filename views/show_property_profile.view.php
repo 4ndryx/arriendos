@@ -31,7 +31,7 @@ $contentH ='Perfil'?>
         <div class="row ">
           <div class="col-12">
         <div class="row ">
-    <div class="card mx-auto" style="max-width: 80%; min-width: 80%;">
+    <div class="card mx-auto" style="max-width: 32%; min-width: 32%;">
       <div class="card-header card-warning card-outline ">
                 <h3 class="card-title">Acerca de la propriedad</h3>
               </div>
