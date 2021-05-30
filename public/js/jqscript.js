@@ -429,6 +429,7 @@ function deleteProperty(id){
 
 	$.get(l + '/controllers/show_property.php?action=delete&id=' + id, function(response){
 			response = JSON.parse(response);
+		console.log(response);
 			if (response.result) { 
 				$('#' + id).remove();
 				Swal.fire({
@@ -441,7 +442,6 @@ function deleteProperty(id){
 				});
 
 			}else{
-		console.log(response);
 				Swal.fire({
 		    		toast: true,
 		    		position: 'top-end',
