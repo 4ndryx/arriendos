@@ -145,7 +145,7 @@ body {}
     margin-left: 260px;
     transition: all 0.3s;
     height: auto;
-    /*min-height: 808.122px;*/
+    min-height: 48.81em;
     width: 80%;
     /*margin-bottom: -53px;*/
 }
@@ -2040,7 +2040,7 @@ ul.two-part-sp li{
     background: -webkit-linear-gradient(178deg, #e12503 0%, #85060c 100%);
     background: linear-gradient(178deg, #e12503 0%, #85060c 100%);
     z-index: 99;
-    left: 200px;
+    left: 225px;
     right: 0;
     top: 0;
     margin: 0 auto;
@@ -4777,4 +4777,40 @@ div#sparklinehome canvas {
         left: 0;
         background: #cf6917;
     }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
