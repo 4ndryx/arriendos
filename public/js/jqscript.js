@@ -428,6 +428,7 @@ $('#deleteLessorBtn').click(function(e){
 function deleteProperty(id){
 
 	$.get(l + '/controllers/show_property.php?action=delete&id=' + id, function(response){
+		console.log(response);
 			response = JSON.parse(response);
 			if (response.result) { 
 				$('#' + id).remove();
