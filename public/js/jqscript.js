@@ -939,7 +939,7 @@ for (var i = 0; i < activeModal.length; i++) {
 		modal.show();
 		var targeted = $(this).attr('btn-target');
 		var data = $(this).attr('data');
-		$('#deleteCRUDBtn').attr('data', data);
+		$('.deleteCrud').attr('data', data);
 	});
 }
 	
