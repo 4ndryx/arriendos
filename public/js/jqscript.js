@@ -485,7 +485,7 @@ function deletePptProfile(id){
 			      })}
 	});
 }
-$('#deletePropertyBtn').click(function(e){
+$('#deletePptProfileBtn').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('data');
 	modal.hide();
@@ -517,7 +517,7 @@ function deleteLeProfile(id){
 	});
 }
 
-$('.deleteLeProfileBtn').click(function(e){
+$('#deleteLeProfileBtn').click(function(e){
 	e.preventDefault();
 	var id = $('#id').text();
 	deleteLeProfile(id);
@@ -550,7 +550,7 @@ function deleteLrProfile(id){
 	});
 }
 
-$('.deleteLrProfileBtn').click(function(e){
+$('#deleteLrProfileBtn').click(function(e){
 	e.preventDefault();
 	var id = $('#id').text();
 	deleteLrProfile(id);
@@ -696,7 +696,7 @@ function deleteCttProfile(id){
 	});
 }
 
-$('.deleteCttProfileBtn').click(function(e){
+$('#deleteCttProfileBtn').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('id');
 	deleteCttProfile(id);
