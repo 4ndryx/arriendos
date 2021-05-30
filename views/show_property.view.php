@@ -6,7 +6,6 @@ $contentH ='Lista de propriedades'?>
 
 <?php ob_start(); ?>
 <link rel="stylesheet" href="<?php echo LINK ?>public/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="<?php echo LINK ?>public/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="<?php echo LINK ?>public/css/buttons.bootstrap4.min.css">
 <?php $style = ob_get_clean(); ?>
 
@@ -54,7 +53,7 @@ $contentH ='Lista de propriedades'?>
     <p style="color: white;" class="mx-auto">Borrar registro?</p>
      <div class="modal-footer justify-content-between ">
       <button id = "cancel" type="button" class="btn btn-outline-light close-Btn" data-dismiss="modal">Cancelar</button>
-      <button id ="deleteCRUDBtn" type="button" data = "" class="btn btn-outline-light">Borrar</button>
+      <button id ="deletePropertyBtn" type="button" data = "" class="btn btn-outline-light deleteCrud">Borrar</button>
     </div>
   </div>
 
