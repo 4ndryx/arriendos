@@ -119,7 +119,6 @@
                                                 
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                            <img src="" alt="" />
                                                             <span class="admin-name"><?= $_SESSION['name'] ?></span>
                                                         </a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
